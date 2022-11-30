@@ -1,0 +1,17 @@
+#main {
+}
+#section {
+    padding-top: 9vw;
+}
+#section h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 10vw;
+    font-weight: 100;
+    line-height: 1.05;
+    margin-bottom: -18vw;
+}
+#section .rocket {}
+#section .cloud {
+    margin-top: -10px;
+}

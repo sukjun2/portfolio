@@ -1,0 +1,50 @@
+/* 클리어 픽스 */
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    line-height: 0;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* 블라인드 효과 */
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* 이미지 대체(ir) 효과 */
+.ir {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/* 폰트 */
+.pop {
+    font-family: "Poppins";
+}
+.mont {
+    font-family: "Montserrat";
+}
+.nexon {
+    font-family: "NexonLv2Gothic";
+}
+
+/* 배경 */
+.black {
+    background-color: #000;
+}
