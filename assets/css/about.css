@@ -1,0 +1,132 @@
+#section1 {
+    padding-top: 9vw;
+    position: relative;
+}
+#section1 h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 10.4vw;
+    font-weight: 100;
+    line-height: 1.05;
+    margin-bottom: -18vw;
+}
+
+.bubble .bubble1 {
+    width: 20vw;
+    position: absolute;
+    right: 15vw;
+    top: 60vw;
+}
+.bubble .bubble2 {
+    width: 20vw;
+    position: absolute;
+    left: 15vw;
+    top: 50vw;
+    rotate: 270deg;
+}
+.rocket {
+}
+.cloud {
+    margin-top: -10px;
+    position: relative;
+}
+.about__inner {
+}
+.profile {
+    width: 27vw;
+    position: absolute;
+    right: 18vw;
+    top: -12vw;
+}
+.aboutMe {
+    width: 37vw;
+    height: 37vw;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: -2vw;
+    left: 25vw;
+    text-align: center;
+    z-index: 1;
+}
+.aboutMe h2 {
+    margin-top: 8vw;
+    margin-bottom: 2.6vw;
+    font-size: 5.2vw;
+    font-weight: 100;
+    line-height: 1.05;
+}
+.aboutMe p {
+    font-size: 1.1vw;
+    font-weight: 300;
+    line-height: 151%;
+}
+.sub_profile_01 {
+    width: 27vw;
+    position: absolute;
+    left: 7vw;
+    top: 19vw;
+}
+.sub_profile_02 {
+    width: 38vw;
+    position: absolute;
+    right: 20vw;
+    top: 40vw;
+}
+.passion {
+    width: 25vw;
+    height: 25vw;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 54vw;
+    right: 6vw;
+    text-align: center;
+    z-index: 1;
+}
+.passion h2 {
+    margin-top: 6.3vw;
+    margin-bottom: 2.6vw;
+    font-size: 4.2vw;
+    font-weight: 100;
+    line-height: 1.05;
+}
+.passion p {
+    font-size: 1.1vw;
+    font-weight: 300;
+    line-height: 151%;
+}
+.sub_profile_03 {
+    width: 28vw;
+    position: absolute;
+    left: 17vw;
+    bottom: 29vw;
+}
+.try {
+    width: 25vw;
+    height: 25vw;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 42vw;
+    left: 2vw;
+    text-align: center;
+    z-index: 1;
+}
+.try h2 {
+    margin-top: 6.3vw;
+    margin-bottom: 2.6vw;
+    font-size: 4.2vw;
+    font-weight: 100;
+    line-height: 1.05;
+}
+.try p {
+    font-size: 1.1vw;
+    font-weight: 300;
+    line-height: 151%;
+}
+/* //ABOUT ME */
+
