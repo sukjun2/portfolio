@@ -33,10 +33,14 @@
 .about__inner {
 }
 .profile {
-    width: 27vw;
+    width: 26vw;
+    height: 27vw;
     position: absolute;
     right: 18vw;
     top: -12vw;
+    background-image: url(../img/about_01.png);
+    background-size: cover;
+    background-position: center center;
 }
 .aboutMe {
     width: 37vw;
@@ -64,15 +68,23 @@
 }
 .sub_profile_01 {
     width: 27vw;
+    height: 27vw;
     position: absolute;
     left: 7vw;
     top: 19vw;
+    background-image: url(../img/about_02.png);
+    background-size: cover;
+    background-position: center center;
 }
 .sub_profile_02 {
     width: 38vw;
+    height: 38vw;
     position: absolute;
     right: 20vw;
     top: 40vw;
+    background-image: url(../img/about_03.png);
+    background-size: cover;
+    background-position: center center;
 }
 .passion {
     width: 25vw;
@@ -100,9 +112,13 @@
 }
 .sub_profile_03 {
     width: 28vw;
+    height: 28vw;
     position: absolute;
     left: 17vw;
     bottom: 29vw;
+    background-image: url(../img/about_04.png);
+    background-size: cover;
+    background-position: center center;
 }
 .try {
     width: 25vw;

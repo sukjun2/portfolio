@@ -77,6 +77,7 @@
     height: 100vh;
     background-color: #000;
     position: relative;
+    z-index: -1;
 }
 .sect3 svg:nth-child(1) {
     rotate: 15deg;
@@ -111,6 +112,7 @@
     height: 100vh;
     background-color: #000;
     position: relative;
+    z-index: -1;
 }
 .sect4 svg:nth-child(1) {
     rotate: -15deg;
@@ -146,6 +148,7 @@
     height: 100vh;
     background-color: #000;
     position: relative;
+    z-index: -1;
 }
 .sect5 svg:nth-child(1) {
     rotate: -5deg;
@@ -167,27 +170,23 @@
 }
 /* /sect5 */
 
-.animated_title {
-    font-size: 15.6vw;
+.animated_text {
+    font-size: 10vw;
+    font-weight: 100;
     font-family: "Montserrat";
-    font-weight: 300;
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    padding: 100px 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-.animated_title .track {
-    position: absolute;
+    overflow: hidden;
     white-space: nowrap;
-    will-change: transform;
-    animation: marquee 60s linear infinite;
+    margin: 0;
+    padding: 0;
+    animation: scroll 250s linear infinite;
+    position: absolute;
     color: #fff;
+    text-transform: uppercase;
+    top: 40%;
 }
-@keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
+@keyframes scroll {
+    100% {
+        text-indent: -60em;
+    }
+}
 /* /background text */
