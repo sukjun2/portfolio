@@ -11,13 +11,13 @@
     margin-bottom: -18vw;
 }
 
-.bubble .bubble1 {
+.bubble_effect .bubble1 {
     width: 20vw;
     position: absolute;
     right: 15vw;
     top: 60vw;
 }
-.bubble .bubble2 {
+.bubble_effect .bubble2 {
     width: 20vw;
     position: absolute;
     left: 15vw;
@@ -127,6 +127,20 @@
     font-size: 1.1vw;
     font-weight: 300;
     line-height: 151%;
+}
+
+.bubble_effect2 .bubble3{
+    width: 20vw;
+    position: absolute;
+    left: 15vw;
+    bottom: -5vw;
+}
+.bubble_effect2 .bubble4{
+    width: 20vw;
+    position: absolute;
+    right: 15vw;
+    bottom: -10vw;
+    rotate: 180deg;
 }
 /* //ABOUT ME */
 

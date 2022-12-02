@@ -1,7 +1,7 @@
 #section2 {
+    position: relative;
 }
 .sun {
-    position: relative;
 }
 .sun .site__title {
     position: absolute;
@@ -10,6 +10,7 @@
     top: 39vw;
     left: 33vw;
     z-index: 1;
+    width: 34vw;
 }
 .sun .site__title h1 {
     font-size: 10.4vw;
@@ -37,31 +38,36 @@
 .site__inner > div {
     margin-bottom: 15.6vw;
 }
-.site__inner .webstandard {}
+.site__inner > div:last-child {
+    margin-bottom: 0;
+    padding-bottom: 15.6vw;
+}
+.site__inner .webstandard {
+}
 .site__inner .webstandard .webstandard_title {
     text-align: right;
     font-size: 5.2vw;
     font-weight: 900;
     line-height: 98%;
-    margin-bottom: 2.6vw;   
+    margin-bottom: 2.6vw;
 }
 .webstandard .webstandard__inner {
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-.webstandard .webstandard__inner img{
+.webstandard .webstandard__inner img {
     width: 75%;
 }
-.webstandard .webstandard__inner p{
+.webstandard .webstandard__inner p {
     width: 21%;
-    text-align: right; 
+    text-align: right;
     font-size: 1.1vw;
     font-weight: 300;
     line-height: 151%;
     white-space: nowrap;
 }
-.webstandard .webstandard__inner a{
+.webstandard .webstandard__inner a {
     display: block;
     text-align: center;
     font-weight: 300;
@@ -71,6 +77,7 @@
     border: 1px solid #fff;
     padding: 1vw 0vw;
     width: 15.5vw;
+    float: right;
 }
 /* /webstandard */
 
@@ -86,18 +93,18 @@
     justify-content: space-between;
     position: relative;
 }
-.responsive .responsive__inner img{
+.responsive .responsive__inner img {
     width: 75%;
 }
-.responsive .responsive__inner p{
+.responsive .responsive__inner p {
     width: 21%;
-    text-align: left; 
+    text-align: left;
     font-size: 1.1vw;
     font-weight: 300;
     line-height: 151%;
     white-space: nowrap;
 }
-.responsive .responsive__inner a{
+.responsive .responsive__inner a {
     display: block;
     text-align: center;
     font-weight: 300;
@@ -107,6 +114,7 @@
     border: 1px solid #fff;
     padding: 1vw 0vw;
     width: 15.5vw;
+    float: left;
 }
 /* /responsive */
 
@@ -122,17 +130,18 @@
     justify-content: space-between;
     position: relative;
 }
-.react .react__inner img{
+.react .react__inner img {
     width: 75%;
 }
-.react .react__inner p{
+.react .react__inner p {
     width: 21%;
-    text-align: right; 
+    text-align: right;
     font-size: 1.1vw;
     font-weight: 300;
     line-height: 151%;
+    white-space: nowrap;
 }
-.react .react__inner a{
+.react .react__inner a {
     display: block;
     text-align: center;
     font-weight: 300;
@@ -142,11 +151,12 @@
     border: 1px solid #fff;
     padding: 1vw 0vw;
     width: 15.5vw;
+    float: right;
 }
-.react .react__inner a:nth-child(2){
+.react .react__inner a:nth-child(2) {
     margin-top: 1vw;
 }
-.react .react__inner a:nth-child(3){
+.react .react__inner a:nth-child(3) {
     margin-top: 1vw;
 }
 /* /react */
@@ -163,17 +173,18 @@
     justify-content: space-between;
     position: relative;
 }
-.vue .vue__inner img{
+.vue .vue__inner img {
     width: 75%;
 }
-.vue .vue__inner p{
+.vue .vue__inner p {
     width: 21%;
-    text-align: left; 
+    text-align: left;
     font-size: 1.1vw;
     font-weight: 300;
     line-height: 151%;
+    white-space: nowrap;
 }
-.vue .vue__inner a{
+.vue .vue__inner a {
     display: block;
     text-align: center;
     font-weight: 300;
@@ -183,6 +194,47 @@
     border: 1px solid #fff;
     padding: 1vw 0vw;
     width: 15.5vw;
+    float: left;
 }
 /* /vue */
+
+.site__inner .php .php_title {
+    text-align: right;
+    font-size: 5.2vw;
+    font-weight: 900;
+    line-height: 98%;
+    margin-bottom: 2.6vw;
+}
+.php .php__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.php .php__inner img {
+    width: 75%;
+}
+.php .php__inner p {
+    width: 21%;
+    text-align: right;
+    font-size: 1.1vw;
+    font-weight: 300;
+    line-height: 151%;
+    white-space: nowrap;
+}
+.php .php__inner a {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 2.6vw;
+    font-size: 1.5vw;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1vw 0vw;
+    width: 15.5vw;
+    float: right;
+}
+.php .php__inner a:nth-child(2) {
+    margin-top: 1vw;
+}
+/* /php */
 /* //SITE WORK */

@@ -1,0 +1,193 @@
+#section3 {
+    position: relative;
+}
+.horizontalWrap {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #9c193e;
+}
+.horizontalSection {
+    overscroll-behavior: none;
+    width: 500%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sect1 {
+    width: 100%;
+    height: 100vh;
+}
+/* /sect1 */
+
+.sect2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+.sect2 .rows_circle {
+    width: 40%;
+    height: 100vh;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: -20vw;
+}
+.sect2 svg:nth-child(1) {
+    rotate: -15deg;
+}
+.sect2 svg:nth-child(1) text {
+    font-size: 2vw;
+    font-weight: 400;
+    fill: #fff;
+    font-family: "Montserrat";
+}
+.sect2 svg:nth-child(2) {
+    rotate: -45deg;
+}
+.sect2 svg:nth-child(2) text {
+    font-size: 2vw;
+    font-weight: 400;
+    fill: #fff;
+    rotate: 47deg;
+    font-family: "Montserrat";
+}
+.sect2 .top_circle1 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: #ece3ce;
+    left: 5vw;
+    top: -18vw;
+}
+.bom_cicle1 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: #ece3ce;
+    right: 30vw;
+    bottom: -12vw;
+}
+/* /sect2 */
+
+.sect3 {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+.sect3 svg:nth-child(1) {
+    rotate: 15deg;
+}
+.sect3 svg:nth-child(1) text {
+    font-size: 2vw;
+    font-weight: 400;
+    fill: #fff;
+    font-family: "Montserrat";
+}
+.top_circle2 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: #ece3ce;
+    left: 5vw;
+    top: -17vw;
+}
+.bom_cicle2 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: #ece3ce;
+    right: 0vw;
+    bottom: -16vw;
+}
+/* /sect3 */
+.sect4 {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+.sect4 svg:nth-child(1) {
+    rotate: -15deg;
+}
+.sect4 svg:nth-child(1) text {
+    font-size: 2vw;
+    font-weight: 400;
+    fill: #fff;
+    font-family: "Montserrat";
+}
+.sect4 svg:nth-child(2) {
+    rotate: 15deg;
+}
+.sect4 svg:nth-child(2) text {
+    font-size: 2vw;
+    font-weight: 400;
+    fill: #fff;
+    font-family: "Montserrat";
+}
+.top_circle3 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: #ece3ce;
+    left: 40vw;
+    top: -15vw;
+}
+/* /sect4 */
+
+.sect5 {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+.sect5 svg:nth-child(1) {
+    rotate: -5deg;
+}
+.sect5 svg:nth-child(1) text {
+    font-size: 2vw;
+    font-weight: 400;
+    fill: #fff;
+    font-family: "Montserrat";
+}
+.top_circle4 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: #ece3ce;
+    right: 20vw;
+    top: -17vw;
+}
+/* /sect5 */
+
+.animated_title {
+    font-size: 15.6vw;
+    font-family: "Montserrat";
+    font-weight: 300;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 100px 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.animated_title .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 60s linear infinite;
+    color: #fff;
+}
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+/* /background text */
