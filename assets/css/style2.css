@@ -1,0 +1,163 @@
+body {
+    background-color: #000;
+}
+#header {
+    
+}
+.header__wrap {
+}
+.header__inner {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    transform: translateY(-100px);
+    z-index: 99999;
+    background-color: #000;
+}
+.header__menu {
+    border-bottom: 1px solid #fff;
+    padding: 2vh 3vw;
+}
+.header__menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu ul li {
+    font-weight: 700;
+    font-size: 1.1vw;
+}
+.header__menu ul li a {
+    color: #fff;
+    padding: 0.2vw 0.5vw;
+}
+/* header */
+
+#section01 {
+    padding-top: 9vw;
+    position: relative;
+}
+#section01 h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 10.4vw;
+    font-weight: 100;
+    line-height: 1.05;
+    margin-bottom: -18vw;
+    opacity: 0;
+    transform: translateY(300px);
+}
+#section01 svg {
+}
+.bubble_effect01{
+}
+.bubble_effect01 .bubble01{
+    width: 9vw;
+    height: 9vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 60vw;
+    left: 20vw;
+}
+.bubble_effect01 .bubble02{
+    width: 3.5vw;
+    height: 3.5vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 57vw;
+    left: 30vw;
+}
+.bubble_effect01 .bubble03{
+    width: 3vw;
+    height: 3vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 59vw;
+    left: 15vw;
+}
+.bubble_effect01 .bubble04{
+    width: 1.5vw;
+    height: 1.5vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 56vw;
+    left: 22vw;
+}
+.bubble_effect01 .bubble05{
+    width: 3.7vw;
+    height: 3.7vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50vw;
+    left: 18vw;
+}
+.bubble_effect01 .bubble06{
+    width: 1vw;
+    height: 1vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 51vw;
+    left: 27vw;
+}
+.bubble_effect02{
+}
+.bubble_effect02 .bubble07{
+    width: 9vw;
+    height: 9vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 64vw;
+    right: 26vw;
+}
+.bubble_effect02 .bubble08{
+    width: 3.5vw;
+    height: 3.5vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 74vw;
+    right: 22vw;
+}
+.bubble_effect02 .bubble09{
+    width: 0.8vw;
+    height: 0.8vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 71vw;
+    right: 17vw;
+}
+.bubble_effect02 .bubble10{
+    width: 1.5vw;
+    height: 1.5vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 65vw;
+    right: 21vw;
+}
+.bubble_effect02 .bubble11{
+    width: 3.7vw;
+    height: 3.7vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 61vw;
+    right: 15vw;
+}
+.bubble_effect02 .bubble12{
+    width: 3vw;
+    height: 3vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 59vw;
+    right: 24vw;
+}
+/* section1 */
