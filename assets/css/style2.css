@@ -47,12 +47,8 @@ body {
     transform: translateY(400px);
 }
 @media (max-width: 1200px) {
-    #section01 h1 {
-        padding-top: 0;
-        transform: translateY(0px);
 }
 @media (max-width: 992px) {
-}
 }
 .bubble_effect01 {
     opacity: 0;
@@ -181,7 +177,7 @@ body {
     height: 27vw;
     position: absolute;
     right: 18vw;
-    top: -26vw;
+    top: -34vw;
     background-image: url(../img/about_01.png);
     background-size: cover;
     background-position: center center;
@@ -193,7 +189,7 @@ body {
     background-color: #000;
     border-radius: 50%;
     position: absolute;
-    top: -14vw;
+    top: -18vw;
     left: 25vw;
     text-align: center;
     z-index: 1;
@@ -215,7 +211,7 @@ body {
     height: 27vw;
     position: absolute;
     left: 7vw;
-    top: 3vw;
+    top: -3vw;
     background-image: url(../img/about_02.png);
     background-size: cover;
     background-position: center center;
@@ -225,7 +221,7 @@ body {
     height: 38vw;
     position: absolute;
     right: 20vw;
-    top: 20vw;
+    top: 15vw;
     background-image: url(../img/about_03.png);
     background-size: cover;
     background-position: center center;
@@ -259,7 +255,7 @@ body {
     height: 28vw;
     position: absolute;
     left: 17vw;
-    bottom: 52vw;
+    bottom: 55vw;
     background-image: url(../img/about_04.png);
     background-size: cover;
     background-position: center center;

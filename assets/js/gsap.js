@@ -464,9 +464,9 @@ window.onload = function(){
       word  = document.querySelectorAll('.i_word');
     
     tl
-      .to(firstBg, 0.2, {scaleX:1})
-      .to(word, 0.1, {opacity:1}, "-=0.1")  
-      .to(firstBg, 0.2, {scaleX:0})
+      .to(".i_bg", 0.2, {scaleX:1})
+      .to(".i_word", 0.1, {opacity:1}, "-=0.1")  
+      .to(".i_bg", 0.2, {scaleX:0})
   }
   
 // sitework
