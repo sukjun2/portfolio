@@ -451,16 +451,4 @@ gsap.from(".php_title span", {
         toggleActions: "restart none reverse none",
     },
 });
-
-window.onload = function(){
-    var tl = new TimelineLite({delay: 1}),
-      firstBg = document.querySelectorAll('.i_bg'),
-      word  = document.querySelectorAll('.i_word');
-    
-    tl
-      .to(".i_bg", 0.2, {scaleX:1})
-      .to(".i_word", 0.1, {opacity:1}, "-=0.1")  
-      .to(".i_bg", 0.2, {scaleX:0})
-  }
-  
 // sitework

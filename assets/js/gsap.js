@@ -12,7 +12,7 @@ function raf(time) {
 requestAnimationFrame(raf);
 // lenis 효과
 
-gsap.to("progress", {
+gsap.to("#progress", {
     value: 100,
     ease: "none",
     scrollTrigger: { scrub: 0.3 },
@@ -470,3 +470,21 @@ gsap.from(".php__inner img", {
     },
 });
 // section03
+
+const sects = gsap.utils.toArray(".sect");
+
+gsap.to(sects, {
+    xPercent: -100 * (sects.length - 1),
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".horizontalWrap",
+        pin: true,
+        scrub: 1,
+        end: "+=2000",
+        // markers: true,
+    },
+});
+// 가로모드
+
+
+// section04
