@@ -54,14 +54,12 @@ progress::-moz-progress-bar {
     background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
     background-attachment: fixed;
 }
-@media (max-width: 768px){
-    #header{
-        margin-top: -5vw;
+@media (max-width: 768px) {
+    #header {
     }
 }
-@media (max-width: 480px){
-    #header{
-        margin-top: 5vw;
+@media (max-width: 480px) {
+    #header {
     }
 }
 /* //header */
@@ -91,6 +89,21 @@ progress::-moz-progress-bar {
     scale: 1;
     transform: translateY(200px);
 }
+@media (max-width: 1440px) {
+    #section01 {
+        height: 100%;
+        margin-top: 20vw;
+        padding: 15vw 0;
+    }
+}
+@media (max-width: 1280px) {
+    #section01 {
+        height: 100%;
+        margin-top: 20vw;
+        padding: 15vw 0;
+        padding-top: 20vw;
+    }
+}
 @media (max-width: 1024px) {
     #section01 {
         height: 100%;
@@ -102,7 +115,7 @@ progress::-moz-progress-bar {
     #section01 {
         height: 100%;
         margin-top: 50vw;
-        padding-top: 20vw;
+        padding: 15vw 0;
     }
 }
 @media (max-width: 480px) {
@@ -110,7 +123,7 @@ progress::-moz-progress-bar {
         height: 100%;
         margin-top: 70vw;
         margin-bottom: -20vw;
-        padding-top: 15vw;
+        padding: 15vw 0;
     }
 }
 /* /section01 */
@@ -696,6 +709,10 @@ progress::-moz-progress-bar {
     justify-content: space-between;
     position: relative;
 }
+.php_title span {
+    display: inline-block;
+    white-space: pre;
+}
 .php .php__inner img {
     width: 75%;
 }
@@ -910,14 +927,223 @@ progress::-moz-progress-bar {
 }
 /* /section04 */
 
-#section05{
+#section05 {
 }
-.section05_inner{
+.section05_inner {
 }
 .beige_cloud {
-    width: 100%;
-    height: 100vh;
-    background: url(../img/beige_cloud.png);
+    padding-top: 60vw;
+    background-image: url(../img/beige_cloud.png);
     background-size: cover;
+    text-align: center;
+}
+.beige_cloud svg {
+    margin-bottom: 1.6vw;
+}
+.study_site {
+    overflow: hidden;
+}
+.study_site p {
+    margin-bottom: 15.6vw;
+    font-size: 1.1vw;
+    font-weight: 300;
+    line-height: 151.4%;
+}
+.study_site ul {
+    text-transform: uppercase;
+    font-size: 4.2vw;
+    font-weight: 100;
+    white-space: nowrap;
+}
+.study_site ul li {
+    border-top: 1px solid #000;
+    padding: 20px 0;
+    animation: scroll 100s linear infinite;
+    transition: all 0.3s;
+}
+.study_site ul li img {
+    display: none;
+    translate: all 0.6s;
+}
+.study_site ul li:hover {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+.study_site ul li:first-child:hover img {
+    position: absolute;
+    display: block;
+    top: -13vw;
+    right: 10vw;
+    width: 30vw;
+    height: 20vw;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+@keyframes scroll {
+    100% {
+        text-indent: -60em;
+    }
+}
+.study_site ul li:last-child {
+    border-bottom: 1px solid #000;
+}
+.contact_me {
+    padding: 15.6vw;
+    position: relative;
+    overflow: hidden;
+}
+.contact_me h2 {
+    font-weight: 100;
+    font-size: 5.2vw;
+    margin-bottom: 5.2vw;
+}
+.contact_me .info {
+    display: flex;
+    justify-content: space-between;
+}
+.contact_me .info input {
+    font-family: "Montserrat";
+    width: 100%;
+    border-radius: 20px;
+    font-weight: 100;
+    font-size: 1.6vw;
+    padding: 1.6vw;
+    border: 1px solid #000;
+    margin-bottom: 2.6vw;
+}
+#name {
+    margin-right: 1vw;
+}
+#email {
+    margin-left: 1vw;
+}
+.contact_me .text {
+    display: block;
+}
+.contact_me .text textarea {
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    width: 100%;
+    border-radius: 20px;
+    font-weight: 100;
+    font-size: 1.6vw;
+    padding: 1.6vw;
+    border: 1px solid #000;
+    margin-bottom: 2.6vw;
+}
+.contact_me button {
+    padding: 1vw 3vw;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-weight: 100;
+    font-size: 1.6vw;
+    background: #ece3ce;
+    margin-bottom: 2.6vw;
+}
+.cotact_profile {
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    left: 5vw;
+    top: 0;
+    background-size: cover;
+    background-image: url(../img/contact_01.svg);
+    animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+    100% {
+        rotate: 360deg;
+    }
+}
+.contact_icon1 {
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    top: 9vw;
+    right: 12vw;
+    background-image: url(../img/contact_02.svg);
+    background-size: cover;
+    animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+    100% {
+        rotate: 360deg;
+    }
+}
+.contact_icon2 {
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 30vw;
+    right: -10vw;
+    background-image: url(../img/contact_03.svg);
+    background-size: cover;
+    animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+    100% {
+        rotate: 360deg;
+    }
+}
+.contact_icon3 {
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    bottom: 0vw;
+    left: -4vw;
+    background-image: url(../img/contact_04.svg);
+    background-size: cover;
+    animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+    100% {
+        rotate: 360deg;
+    }
+}
+.contact_icon4 {
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    bottom: -1vw;
+    left: 46vw;
+    background-image: url(../img/contact_05.svg);
+    background-size: cover;
+    animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+    100% {
+        rotate: 360deg;
+    }
+}
+.contact_icon5 {
+    width: 12vw;
+    height: 12vw;
+    position: absolute;
+    bottom: -6vw;
+    right: 2vw;
+    background-image: url(../img/contact_06.svg);
+    background-size: cover;
+    animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.my_info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.my_info img {
+    width: 5vw;
+    margin-bottom: 2.6vw;
+}
+.my_info p {
+    font-family: "Montserrat";
+    font-weight: 100;
+    font-size: 1.9vw;
 }
 /* /section05 */
