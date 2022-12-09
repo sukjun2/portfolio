@@ -12,6 +12,13 @@ function raf(time) {
 requestAnimationFrame(raf);
 // lenis 효과
 
+gsap.to("progress", {
+    value: 100,
+    ease: "none",
+    scrollTrigger: { scrub: 0.3 },
+});
+// 메뉴바 프로그래스
+
 window.onload = function () {
     const tl = new TimelineLite({ delay: 2 });
     tl.to(".header__menu", {
@@ -209,15 +216,43 @@ gsap.from(".bubble__effect01", {
     opacity: 0,
     delay: 4,
 });
-gsap.to([".bubble01", ".bubble02", ".bubble03", ".bubble04", ".bubble05", ".bubble06", ".bubble07", ".bubble08", ".bubble09", ".bubble10", ".bubble11", ".bubble12", ".bubble13", ".bubble14", ".bubble15", ".bubble16", ".bubble17", ".bubble18", ".bubble19", ".bubble20", ".bubble21", ".bubble22", ".bubble23", ".bubble24"], {
-    xPercent: "random(-30, 30)",
-    yPercent: "random(-30, 30)",
-    duration: 1,
-    repeat: -1,
-    repeatRefresh: true,
-    yoyo: true,
-    ease: "power1.out",
-});
+gsap.to(
+    [
+        ".bubble01",
+        ".bubble02",
+        ".bubble03",
+        ".bubble04",
+        ".bubble05",
+        ".bubble06",
+        ".bubble07",
+        ".bubble08",
+        ".bubble09",
+        ".bubble10",
+        ".bubble11",
+        ".bubble12",
+        ".bubble13",
+        ".bubble14",
+        ".bubble15",
+        ".bubble16",
+        ".bubble17",
+        ".bubble18",
+        ".bubble19",
+        ".bubble20",
+        ".bubble21",
+        ".bubble22",
+        ".bubble23",
+        ".bubble24",
+    ],
+    {
+        xPercent: "random(-30, 30)",
+        yPercent: "random(-30, 30)",
+        duration: 1,
+        repeat: -1,
+        repeatRefresh: true,
+        yoyo: true,
+        ease: "power1.out",
+    }
+);
 // section02
 
 gsap.to(".sun_rot", {
