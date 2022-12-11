@@ -588,6 +588,9 @@ document.querySelector(".p-3").addEventListener("mouseover", function () {
 document.querySelector(".p-4").addEventListener("mouseover", function () {
     document.querySelector(".cursor").style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive4_ztkutp.jpg)";
 });
+document.querySelector(".p-5").addEventListener("mouseover", function () {
+    document.querySelector(".cursor").style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive4_ztkutp.jpg)";
+});
 
 let flag = false;
 overlay.forEach((item) => {
