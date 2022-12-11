@@ -13,9 +13,80 @@ requestAnimationFrame(raf);
 // lenis 효과
 
 gsap.to("#progress", {
+    immediateRender: false,
+    value: 10,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#section01",
+        start: "top top",
+        scrub: true,
+    },
+});
+gsap.to("#progress", {
+    immediateRender: false,
+    value: 30,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#section02",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+    },
+});
+gsap.to("#progress", {
+    immediateRender: false,
+    value: 45,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#section03",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+    },
+});
+
+const sections = gsap.utils.toArray("#section04");
+let maxWidth = 0;
+const getMaxWidth = () => {
+  maxWidth = 0;
+  sections.forEach((section) => {
+    maxWidth += section.offsetWidth;
+  });
+};
+getMaxWidth();
+gsap.to("#progress", {
+    immediateRender: false,
+    value: 65,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#section04 .sect1",
+        start: "top top",
+        end: () => `+=${maxWidth * 1.5}`,
+        scrub: true,
+        // markers: true,
+    },
+});
+
+const sections2 = gsap.utils.toArray("#section05");
+let maxHeight = 0;
+const getMaxHeight = () => {
+  maxHeight = 0;
+  sections.forEach((section) => {
+    maxHeight += section.offsetHeight;
+  });
+};
+getMaxHeight();
+gsap.to("#progress", {
+    immediateRender: false,
     value: 100,
     ease: "none",
-    scrollTrigger: { scrub: 0.3 },
+    scrollTrigger: {
+        trigger: "#section05",
+        start: "top top",
+        end: () => `+=${maxWidth * 3}`,
+        scrub: true,
+        markers: true,
+    },
 });
 // 메뉴바 프로그래스
 
@@ -485,6 +556,5 @@ gsap.to(sects, {
     },
 });
 // 가로모드
-
 
 // section04

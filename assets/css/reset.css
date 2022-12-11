@@ -103,3 +103,7 @@ fieldset,
 button {
     border: 0;
 }
+
+button {
+    cursor: pointer;
+}
