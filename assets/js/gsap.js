@@ -20,6 +20,7 @@ gsap.to("#progress", {
         trigger: "#section01",
         start: "top top",
         scrub: true,
+        invalidateOnRefresh: true,
     },
 });
 gsap.to("#progress", {
@@ -31,6 +32,7 @@ gsap.to("#progress", {
         start: "top top",
         end: "bottom bottom",
         scrub: true,
+        invalidateOnRefresh: true,
     },
 });
 gsap.to("#progress", {
@@ -42,16 +44,17 @@ gsap.to("#progress", {
         start: "top top",
         end: "bottom bottom",
         scrub: true,
+        invalidateOnRefresh: true,
     },
 });
 
 const sections = gsap.utils.toArray("#section04");
 let maxWidth = 0;
 const getMaxWidth = () => {
-  maxWidth = 0;
-  sections.forEach((section) => {
-    maxWidth += section.offsetWidth;
-  });
+    maxWidth = 0;
+    sections.forEach((section) => {
+        maxWidth += section.offsetWidth;
+    });
 };
 getMaxWidth();
 gsap.to("#progress", {
@@ -63,6 +66,7 @@ gsap.to("#progress", {
         start: "top top",
         end: () => `+=${maxWidth * 1.5}`,
         scrub: true,
+        invalidateOnRefresh: true,
         // markers: true,
     },
 });
@@ -70,10 +74,10 @@ gsap.to("#progress", {
 const sections2 = gsap.utils.toArray("#section05");
 let maxHeight = 0;
 const getMaxHeight = () => {
-  maxHeight = 0;
-  sections.forEach((section) => {
-    maxHeight += section.offsetHeight;
-  });
+    maxHeight = 0;
+    sections.forEach((section) => {
+        maxHeight += section.offsetHeight;
+    });
 };
 getMaxHeight();
 gsap.to("#progress", {
@@ -85,7 +89,8 @@ gsap.to("#progress", {
         start: "top top",
         end: () => `+=${maxWidth * 3}`,
         scrub: true,
-        markers: true,
+        invalidateOnRefresh: true,
+        // markers: true,
     },
 });
 // 메뉴바 프로그래스
@@ -556,5 +561,64 @@ gsap.to(sects, {
     },
 });
 // 가로모드
-
 // section04
+
+let cursor = document.querySelector(".cursor");
+let overlay = document.querySelectorAll(".site_overlay");
+
+function moveCircle(e) {
+    gsap.to(cursor, 0.5, {
+        css: {
+            left: e.pageX,
+            top: e.pageY,
+        },
+        delay: 0.03,
+    });
+}
+
+document.querySelector(".p-1").addEventListener("mouseover", function () {
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/javascript.png?raw=true)";
+});
+document.querySelector(".p-2").addEventListener("mouseover", function () {
+    document.querySelector(".cursor").style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive2_gcrxje.jpg)";
+});
+document.querySelector(".p-3").addEventListener("mouseover", function () {
+    document.querySelector(".cursor").style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive3_mfhw4e.jpg)";
+});
+document.querySelector(".p-4").addEventListener("mouseover", function () {
+    document.querySelector(".cursor").style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive4_ztkutp.jpg)";
+});
+
+let flag = false;
+overlay.forEach((item) => {
+    item.addEventListener("mousemove", function () {
+        flag = true;
+        gsap.to(cursor, 0.3, { scale: 1, autoAlpha: 1 });
+        overlay.forEach((item) => {
+            item.addEventListener("mousemove", moveCircle);
+        });
+    });
+});
+overlay.forEach((item) => {
+    item.addEventListener("touchmove", function () {
+        flag = true;
+        gsap.to(cursor, 0.3, { scale: 1, autoAlpha: 1 });
+        overlay.forEach((item) => {
+            item.addEventListener("touchmove", moveCircle);
+        });
+    });
+});
+
+overlay.forEach((item) => {
+    item.addEventListener("mouseout", function () {
+        flag = false;
+        gsap.to(cursor, 0.3, { scale: 0.1, autoAlpha: 0 });
+    });
+});
+overlay.forEach((item) => {
+    item.addEventListener("touchend", function () {
+        flag = false;
+        gsap.to(cursor, 0.3, { scale: 0.1, autoAlpha: 0 });
+    });
+});
+// section05
