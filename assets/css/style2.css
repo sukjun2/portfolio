@@ -565,6 +565,24 @@ progress::-moz-progress-bar {
     padding: 1vw 0vw;
     width: 15.5vw;
     float: right;
+    position: relative;
+    overflow: hidden;
+}
+.btn-1:before {
+    content: "";
+    transition: all 0.6s;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #000;
+    transform: translateX(-100%);
+}
+.btn-1:hover:before {
+    transform: translateX(0);
 }
 /* /webstandard */
 
@@ -606,6 +624,8 @@ progress::-moz-progress-bar {
     padding: 1vw 0vw;
     width: 15.5vw;
     float: left;
+    position: relative;
+    overflow: hidden;
 }
 /* /responsive */
 
@@ -647,6 +667,8 @@ progress::-moz-progress-bar {
     padding: 1vw 0vw;
     width: 15.5vw;
     float: right;
+    position: relative;
+    overflow: hidden;
 }
 .react .react__inner a:nth-child(2) {
     margin-top: 1vw;
@@ -694,6 +716,8 @@ progress::-moz-progress-bar {
     padding: 1vw 0vw;
     width: 15.5vw;
     float: left;
+    position: relative;
+    overflow: hidden;
 }
 /* /vue */
 
@@ -735,6 +759,8 @@ progress::-moz-progress-bar {
     padding: 1vw 0vw;
     width: 15.5vw;
     float: right;
+    position: relative;
+    overflow: hidden;
 }
 .php .php__inner a:nth-child(2) {
     margin-top: 1vw;
@@ -746,165 +772,79 @@ progress::-moz-progress-bar {
 }
 .horizontalWrap {
     width: 100%;
-    height: 100vh;
     overflow: hidden;
-    background-color: #9c193e;
+    background-color: #000;
 }
 .horizontalSection {
-    overscroll-behavior: none;
     width: 500%;
+    height: 100vh;
+    overscroll-behavior: none;
     display: flex;
     flex-wrap: nowrap;
 }
 .sect1 {
-    width: 100%;
-    height: 100vh;
+    width: 90%;
+    background-color: #9c193e;
+    z-index: -1;
 }
 /* /sect1 */
-
 .sect2 {
-    width: 100%;
-    background-color: #000;
+    width: 410%;
+    background-image: url(../img/horizontal.png);
+    background-size: cover;
+    background-color: #9c193e;
 }
-.sect2 .rows_circle {
-    width: 40%;
-    height: 100%;
-    background-color: #000;
-    border-radius: 50%;
-    position: absolute;
-    left: -20vw;
+.card {
+    width: 21vw;
+    height: 21vw;
 }
-.sect2 .top_circle1 {
+.quiz {
     position: absolute;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-    background-color: #ece3ce;
-    left: 5vw;
-    top: -15vw;
-}
-.sect2 .quiz {
-    position: absolute;
-    left: 50%;
+    left: 15%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 24vw;
-    height: 24vw;
 }
-.sect2 .search {
+.search {
     position: absolute;
-    left: 110%;
-    top: 50%;
+    width: 52vw;
+    height: 52vw;
+    left: 30%;
+    top: 53%;
     transform: translate(-50%, -50%);
-    width: 32vw;
-    height: 32vw;
-    z-index: 1;
 }
-.sect2 .slider {
+.slider {
     position: absolute;
-    left: 170%;
-    top: 50%;
+    width: 37vw;
+    height: 37vw;
+    left: 45%;
+    top: 53%;
     transform: translate(-50%, -50%);
-    width: 33vw;
-    height: 33vw;
-    z-index: 1;
 }
-.sect2 .mouse {
+.mouse {
     position: absolute;
-    left: 230%;
-    top: 50%;
+    width: 38vw;
+    height: 38vw;
+    left: 60%;
+    top: 52%;
     transform: translate(-50%, -50%);
-    width: 30vw;
-    height: 30vw;
-    z-index: 1;
 }
-.sect2 .parallax {
+.parallax {
     position: absolute;
-    left: 290%;
-    top: 50%;
+    width: 43vw;
+    height: 43vw;
+    left: 75%;
+    top: 53%;
     transform: translate(-50%, -50%);
-    width: 33vw;
-    height: 33vw;
-    z-index: 1;
 }
-.sect2 .game {
+.game {
     position: absolute;
-    left: 350%;
-    top: 50%;
+    width: 37vw;
+    height: 37vw;
+    left: 90%;
+    top: 53%;
     transform: translate(-50%, -50%);
-    width: 41vw;
-    height: 41vw;
-    z-index: 1;
-}
-.bom_cicle1 {
-    position: absolute;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-    background-color: #ece3ce;
-    right: 30vw;
-    bottom: -12vw;
 }
 /* /sect2 */
-
-.sect3 {
-    width: 100%;
-    background-color: #000;
-    z-index: -1;
-}
-.top_circle2 {
-    position: absolute;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-    background-color: #ece3ce;
-    left: 5vw;
-    top: -13vw;
-}
-.bom_cicle2 {
-    position: absolute;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-    background-color: #ece3ce;
-    right: 0vw;
-    bottom: -16vw;
-}
-/* /sect3 */
-
-.sect4 {
-    width: 100%;
-    background-color: #000;
-    position: relative;
-    z-index: -1;
-}
-.top_circle3 {
-    position: absolute;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-    background-color: #ece3ce;
-    left: 40vw;
-    top: -15vw;
-}
-/* /sect4 */
-
-.sect5 {
-    width: 100%;
-    background-color: #000;
-    position: relative;
-    z-index: -1;
-}
-.top_circle4 {
-    position: absolute;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-    background-color: #ece3ce;
-    right: 20vw;
-    top: -17vw;
-}
-/* /sect5 */
 
 .animated_text {
     font-size: 10vw;
@@ -928,6 +868,8 @@ progress::-moz-progress-bar {
 /* /section04 */
 
 #section05 {
+    width: 100%;
+    height: 100%;
 }
 .section05_inner {
 }
@@ -951,17 +893,21 @@ progress::-moz-progress-bar {
 }
 .cursor {
     position: absolute;
-    width: 30vw;
-    height: 30vw;
+    width: 20vw;
+    height: 20vw;
     right: 5%;
     background-size: cover;
     background-position: center center;
     z-index: 1;
     border-radius: 50%;
 }
-.site {
+.siteWrap {
     cursor: pointer;
     position: relative;
+}
+.siteWrap:hover a {
+    background-color: #000;
+    color: #fff;
 }
 .site_overlay {
     position: absolute;
@@ -981,13 +927,9 @@ progress::-moz-progress-bar {
     animation: scroll 100s linear infinite;
     transition: all 0.3s;
 }
-.site_title:hover {
-    background-color: #000;
-    color: #fff;
-    position: relative;
-}
-.site_title:last-child {
+.p-11 {
     border-bottom: 1px solid #000;
+    margin-bottom: 10vw;
 }
 @keyframes scroll {
     100% {
@@ -995,6 +937,7 @@ progress::-moz-progress-bar {
     }
 }
 .contact_me {
+    height: 80vh;
     padding: 15.6vw;
     position: relative;
     overflow: hidden;
@@ -1011,7 +954,7 @@ progress::-moz-progress-bar {
 .contact_me .info input {
     font-family: "Montserrat";
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     font-weight: 100;
     font-size: 1.6vw;
     padding: 1.6vw;
@@ -1031,7 +974,7 @@ progress::-moz-progress-bar {
     box-sizing: border-box;
     font-family: "Montserrat";
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     font-weight: 100;
     font-size: 1.6vw;
     padding: 1.6vw;
@@ -1096,7 +1039,7 @@ progress::-moz-progress-bar {
     width: 20vw;
     height: 20vw;
     position: absolute;
-    bottom: 0vw;
+    bottom: 8vw;
     left: -4vw;
     background-image: url(../img/contact_04.svg);
     background-size: cover;
@@ -1111,7 +1054,7 @@ progress::-moz-progress-bar {
     width: 7vw;
     height: 7vw;
     position: absolute;
-    bottom: -1vw;
+    bottom: 4vw;
     left: 46vw;
     background-image: url(../img/contact_05.svg);
     background-size: cover;
@@ -1126,7 +1069,7 @@ progress::-moz-progress-bar {
     width: 12vw;
     height: 12vw;
     position: absolute;
-    bottom: -6vw;
+    bottom: 5vw;
     right: 2vw;
     background-image: url(../img/contact_06.svg);
     background-size: cover;

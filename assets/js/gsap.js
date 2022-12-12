@@ -166,7 +166,7 @@ gsap.from(".profile01", {
     yPercent: -50,
     scrollTrigger: {
         trigger: ".about__me",
-        start: "-15%",
+        start: "-20%",
         end: "bottom",
         scrub: true,
         // markers: true,
@@ -176,7 +176,7 @@ gsap.from(".profile02", {
     yPercent: -50,
     scrollTrigger: {
         trigger: ".about__me",
-        start: "-15%",
+        start: "-20%",
         end: "bottom",
         scrub: true,
         // markers: true,
@@ -186,7 +186,7 @@ gsap.from(".profile03", {
     yPercent: -50,
     scrollTrigger: {
         trigger: ".about__me",
-        start: "-15%",
+        start: "-20%",
         end: "bottom",
         scrub: true,
         // markers: true,
@@ -196,7 +196,7 @@ gsap.from(".profile04", {
     yPercent: -50,
     scrollTrigger: {
         trigger: ".about__me",
-        start: "-15%",
+        start: "-20%",
         end: "bottom",
         scrub: true,
         // markers: true,
@@ -206,7 +206,7 @@ gsap.from(".aboutMe", {
     yPercent: -20,
     scrollTrigger: {
         trigger: ".about__me",
-        start: "-15%",
+        start: "-20%",
         end: "bottom",
         scrub: true,
         // markers: true,
@@ -216,7 +216,7 @@ gsap.from(".passion", {
     yPercent: -20,
     scrollTrigger: {
         trigger: ".about__me",
-        start: "-15%",
+        start: "-20%",
         end: "bottom",
         scrub: true,
         // markers: true,
@@ -226,7 +226,7 @@ gsap.from(".try", {
     yPercent: -20,
     scrollTrigger: {
         trigger: ".about__me",
-        start: "-15%",
+        start: "-20%",
         end: "bottom",
         scrub: true,
         // markers: true,
@@ -242,11 +242,35 @@ ScrollTrigger.create({
 });
 ScrollTrigger.create({
     trigger: ".about__me",
-    start: "10%",
-    end: "10%",
+    start: "5%",
+    end: "5%",
     scrub: 1,
     // markers: true,
     animation: gsap.fromTo(".profile02", { scale: 0 }, { scale: 1 }),
+});
+ScrollTrigger.create({
+    trigger: ".about__me",
+    start: "25%",
+    end: "25%",
+    scrub: 1,
+    // markers: true,
+    animation: gsap.fromTo(".profile03", { scale: 0 }, { scale: 1 }),
+});
+ScrollTrigger.create({
+    trigger: ".about__me",
+    start: "45%",
+    end: "45%",
+    scrub: 1,
+    // markers: true,
+    animation: gsap.fromTo(".profile04", { scale: 0 }, { scale: 1 }),
+});
+ScrollTrigger.create({
+    trigger: ".about__me",
+    start: "0%",
+    end: "0%",
+    scrub: 1,
+    // markers: true,
+    animation: gsap.fromTo(".aboutMe", { scale: 0 }, { scale: 1 }),
 });
 ScrollTrigger.create({
     trigger: ".about__me",
@@ -254,36 +278,12 @@ ScrollTrigger.create({
     end: "30%",
     scrub: 1,
     // markers: true,
-    animation: gsap.fromTo(".profile03", { scale: 0 }, { scale: 1 }),
-});
-ScrollTrigger.create({
-    trigger: ".about__me",
-    start: "50%",
-    end: "50%",
-    scrub: 1,
-    // markers: true,
-    animation: gsap.fromTo(".profile04", { scale: 0 }, { scale: 1 }),
-});
-ScrollTrigger.create({
-    trigger: ".about__me",
-    start: "5%",
-    end: "5%",
-    scrub: 1,
-    // markers: true,
-    animation: gsap.fromTo(".aboutMe", { scale: 0 }, { scale: 1 }),
+    animation: gsap.fromTo(".passion", { scale: 0 }, { scale: 1 }),
 });
 ScrollTrigger.create({
     trigger: ".about__me",
     start: "35%",
     end: "35%",
-    scrub: 1,
-    // markers: true,
-    animation: gsap.fromTo(".passion", { scale: 0 }, { scale: 1 }),
-});
-ScrollTrigger.create({
-    trigger: ".about__me",
-    start: "40%",
-    end: "40%",
     scrub: 1,
     // markers: true,
     animation: gsap.fromTo(".try", { scale: 0 }, { scale: 1 }),
@@ -356,8 +356,8 @@ gsap.from(".webstandard_title span", {
     stagger: 0.1,
     scrollTrigger: {
         trigger: ".sun",
-        start: "70%",
-        end: "30%",
+        start: "50%",
+        end: "40%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -370,8 +370,8 @@ gsap.from(".responsive_title span", {
     stagger: 0.1,
     scrollTrigger: {
         trigger: ".webstandard",
-        start: "70%",
-        end: "30%",
+        start: "50%",
+        end: "50%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -383,8 +383,8 @@ gsap.from(".react_title span", {
     stagger: 0.1,
     scrollTrigger: {
         trigger: ".responsive",
-        start: "70%",
-        end: "30%",
+        start: "50%",
+        end: "50%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -396,8 +396,8 @@ gsap.from(".vue_title span", {
     stagger: 0.1,
     scrollTrigger: {
         trigger: ".react",
-        start: "70%",
-        end: "30%",
+        start: "50%",
+        end: "50%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -409,8 +409,8 @@ gsap.from(".php_title span", {
     stagger: 0.1,
     scrollTrigger: {
         trigger: ".vue",
-        start: "70%",
-        end: "30%",
+        start: "50%",
+        end: "50%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -422,8 +422,8 @@ gsap.from(".webstandard_desc", {
     duration: 0.5,
     scrollTrigger: {
         trigger: ".sun",
-        start: "70%",
-        end: "30%",
+        start: "60%",
+        end: "40%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -435,8 +435,8 @@ gsap.from(".responsive_desc", {
     duration: 0.5,
     scrollTrigger: {
         trigger: ".webstandard",
-        start: "70%",
-        end: "30%",
+        start: "60%",
+        end: "40%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -448,8 +448,8 @@ gsap.from(".react_desc", {
     duration: 0.5,
     scrollTrigger: {
         trigger: ".responsive",
-        start: "70%",
-        end: "30%",
+        start: "60%",
+        end: "40%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -461,8 +461,8 @@ gsap.from(".vue_desc", {
     duration: 0.5,
     scrollTrigger: {
         trigger: ".react",
-        start: "70%",
-        end: "30%",
+        start: "60%",
+        end: "40%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -474,8 +474,8 @@ gsap.from(".php_desc", {
     duration: 0.5,
     scrollTrigger: {
         trigger: ".vue",
-        start: "70%",
-        end: "30%",
+        start: "60%",
+        end: "40%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -487,8 +487,8 @@ gsap.from(".webstandard__inner img", {
     duration: 0.5,
     scrollTrigger: {
         trigger: ".sun",
-        start: "70%",
-        end: "30%",
+        start: "60%",
+        end: "40%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -500,8 +500,8 @@ gsap.from(".responsive__inner img", {
     duration: 0.5,
     scrollTrigger: {
         trigger: ".webstandard",
-        start: "70%",
-        end: "30%",
+        start: "60%",
+        end: "40%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -513,8 +513,8 @@ gsap.from(".react__inner img", {
     duration: 0.5,
     scrollTrigger: {
         trigger: ".responsive",
-        start: "70%",
-        end: "30%",
+        start: "60%",
+        end: "40%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -526,8 +526,8 @@ gsap.from(".vue__inner img", {
     duration: 0.5,
     scrollTrigger: {
         trigger: ".react",
-        start: "70%",
-        end: "30%",
+        start: "60%",
+        end: "40%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -539,8 +539,8 @@ gsap.from(".php__inner img", {
     duration: 0.5,
     scrollTrigger: {
         trigger: ".vue",
-        start: "70%",
-        end: "30%",
+        start: "60%",
+        end: "40%",
         // markers: true,
         toggleActions: "restart none reverse none",
     },
@@ -561,10 +561,13 @@ gsap.to(sects, {
     },
 });
 // 가로모드
+
+
+
 // section04
 
-let cursor = document.querySelector(".cursor");
-let overlay = document.querySelectorAll(".site_overlay");
+const cursor = document.querySelector(".cursor");
+const overlay = document.querySelectorAll(".site_overlay");
 
 function moveCircle(e) {
     gsap.to(cursor, 0.5, {
@@ -577,19 +580,19 @@ function moveCircle(e) {
 }
 
 document.querySelector(".p-1").addEventListener("mouseover", function () {
-    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/javascript.png?raw=true)";
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/javascript_refer.png?raw=true)";
 });
 document.querySelector(".p-2").addEventListener("mouseover", function () {
-    document.querySelector(".cursor").style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive2_gcrxje.jpg)";
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/html_refer.png?raw=true)";
 });
 document.querySelector(".p-3").addEventListener("mouseover", function () {
-    document.querySelector(".cursor").style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive3_mfhw4e.jpg)";
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/css_refer.png?raw=true)";
 });
 document.querySelector(".p-4").addEventListener("mouseover", function () {
-    document.querySelector(".cursor").style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive4_ztkutp.jpg)";
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/svg_ani.png?raw=true)";
 });
 document.querySelector(".p-5").addEventListener("mouseover", function () {
-    document.querySelector(".cursor").style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive4_ztkutp.jpg)";
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/css_ani.png?raw=true)";
 });
 
 let flag = false;
