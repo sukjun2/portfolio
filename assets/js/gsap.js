@@ -685,6 +685,24 @@ document.querySelector(".p-4").addEventListener("mouseover", function () {
 document.querySelector(".p-5").addEventListener("mouseover", function () {
     document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/css_ani.png?raw=true)";
 });
+document.querySelector(".p-6").addEventListener("mouseover", function () {
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/tistory.png?raw=true)";
+});
+document.querySelector(".p-7").addEventListener("mouseover", function () {
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/tistory.png?raw=true)";
+});
+document.querySelector(".p-8").addEventListener("mouseover", function () {
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/tistory.png?raw=true)";
+});
+document.querySelector(".p-9").addEventListener("mouseover", function () {
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/tistory.png?raw=true)";
+});
+document.querySelector(".p-10").addEventListener("mouseover", function () {
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/tistory.png?raw=true)";
+});
+document.querySelector(".p-11").addEventListener("mouseover", function () {
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/tistory.png?raw=true)";
+});
 
 let flag = false;
 overlay.forEach((item) => {
@@ -705,7 +723,6 @@ overlay.forEach((item) => {
         });
     });
 });
-
 overlay.forEach((item) => {
     item.addEventListener("mouseout", function () {
         flag = false;
