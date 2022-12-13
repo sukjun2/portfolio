@@ -564,7 +564,7 @@ progress::-moz-progress-bar {
 }
 .site__inner {
     margin-top: -20vw;
-    margin-bottom: -1%;
+    margin-bottom: -10px;
     padding: 50vw 10.4vw;
     padding-bottom: 0%;
 }
@@ -907,6 +907,7 @@ progress::-moz-progress-bar {
 /* /sect1 */
 .sect2 {
     width: 410%;
+    margin-left: -1px;
     background-image: url(../img/horizontal.png);
     background-size: cover;
     background-color: #9c193e;
@@ -1184,8 +1185,8 @@ progress::-moz-progress-bar {
         height: 82vw;
     }
     .card_06 a {
-        left: 23%;
-        bottom: 21%;
+        left: 14%;
+        bottom: 14%;
         width: 11vw;
         height: 11vw;
         line-height: 11vw;
@@ -1421,7 +1422,8 @@ progress::-moz-progress-bar {
     align-items: center;
 }
 .my_info img {
-    width: 5vw;
+    width: 4vw;
+    height: 4vw;
     margin-bottom: 2.6vw;
 }
 .my_info p {
