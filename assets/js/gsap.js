@@ -198,9 +198,9 @@ gsap.from(".about__me", {
 gsap.from(".profile01", {
     yPercent: -50,
     scrollTrigger: {
-        trigger: ".about__me",
-        start: "-20%",
-        end: "bottom",
+        trigger: ".profile01",
+        // start: "-20%",
+        // end: "bottom",
         scrub: true,
         // markers: true,
     },
@@ -208,9 +208,9 @@ gsap.from(".profile01", {
 gsap.from(".profile02", {
     yPercent: -50,
     scrollTrigger: {
-        trigger: ".about__me",
-        start: "-20%",
-        end: "bottom",
+        trigger: ".profile02",
+        // start: "-20%",
+        // end: "bottom",
         scrub: true,
         // markers: true,
     },
@@ -218,9 +218,9 @@ gsap.from(".profile02", {
 gsap.from(".profile03", {
     yPercent: -50,
     scrollTrigger: {
-        trigger: ".about__me",
-        start: "-20%",
-        end: "bottom",
+        trigger: ".profile03",
+        // start: "-20%",
+        // end: "bottom",
         scrub: true,
         // markers: true,
     },
@@ -228,9 +228,9 @@ gsap.from(".profile03", {
 gsap.from(".profile04", {
     yPercent: -50,
     scrollTrigger: {
-        trigger: ".about__me",
-        start: "-20%",
-        end: "bottom",
+        trigger: ".profile04",
+        // start: "-20%",
+        // end: "bottom",
         scrub: true,
         // markers: true,
     },
@@ -238,9 +238,9 @@ gsap.from(".profile04", {
 gsap.from(".aboutMe", {
     yPercent: -20,
     scrollTrigger: {
-        trigger: ".about__me",
-        start: "-20%",
-        end: "bottom",
+        trigger: ".aboutMe",
+        // start: "-20%",
+        // end: "bottom",
         scrub: true,
         // markers: true,
     },
@@ -248,9 +248,9 @@ gsap.from(".aboutMe", {
 gsap.from(".passion", {
     yPercent: -20,
     scrollTrigger: {
-        trigger: ".about__me",
-        start: "-20%",
-        end: "bottom",
+        trigger: ".passion",
+        // start: "-20%",
+        // end: "bottom",
         scrub: true,
         // markers: true,
     },
@@ -258,9 +258,9 @@ gsap.from(".passion", {
 gsap.from(".try", {
     yPercent: -20,
     scrollTrigger: {
-        trigger: ".about__me",
-        start: "-20%",
-        end: "bottom",
+        trigger: ".try",
+        // start: "-20%",
+        // end: "bottom",
         scrub: true,
         // markers: true,
     },

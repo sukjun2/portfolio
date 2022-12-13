@@ -266,28 +266,28 @@ progress::-moz-progress-bar {
     width: 28vw;
     position: absolute;
     right: 18vw;
-    top: 35vw;
+    top: 20vw;
     transform: translateY(50%);
 }
 .profile02 {
     width: 27vw;
     position: absolute;
     left: 7vw;
-    top: 60vw;
+    top: 50vw;
     transform: translateY(50%);
 }
 .profile03 {
     width: 38vw;
     position: absolute;
     right: 20vw;
-    top: 83vw;
+    top: 73vw;
     transform: translateY(50%);
 }
 .profile04 {
     width: 28vw;
     position: absolute;
     left: 17vw;
-    bottom: 35vw;
+    bottom: 45vw;
     transform: translateY(50%);
 }
 .aboutMe {
@@ -297,7 +297,7 @@ progress::-moz-progress-bar {
     background-color: #000;
     border-radius: 50%;
     position: absolute;
-    top: 45vw;
+    top: 35vw;
     left: 25vw;
     text-align: center;
     z-index: 1;
@@ -322,7 +322,7 @@ progress::-moz-progress-bar {
     background-color: #000;
     border-radius: 50%;
     position: absolute;
-    top: 98vw;
+    top: 93vw;
     right: 6vw;
     text-align: center;
     z-index: 1;
@@ -347,7 +347,7 @@ progress::-moz-progress-bar {
     background-color: #000;
     border-radius: 50%;
     position: absolute;
-    bottom: 47vw;
+    bottom: 57vw;
     left: 2vw;
     text-align: center;
     z-index: 1;
