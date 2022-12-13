@@ -12,6 +12,26 @@ function raf(time) {
 requestAnimationFrame(raf);
 // lenis 효과
 
+window.addEventListener("scroll", () => {
+    let scrollTop = window.scrollY;
+    document.querySelectorAll("section").forEach((el, i) => {
+        if (scrollTop >= el.offsetTop - 2) {
+            document.querySelectorAll("#header li").forEach((li) => {
+                li.classList.remove("active");
+            });
+            document.querySelector("#header li:nth-child(" + (i + 1) + ")").classList.add("active");
+        }
+    });
+});
+document.querySelectorAll("#header li a").forEach((li) => {
+    li.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector(li.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+        });
+    });
+});
+
 gsap.to("#progress", {
     immediateRender: false,
     value: 10,
@@ -75,19 +95,32 @@ const sections2 = gsap.utils.toArray("#section05");
 let maxHeight = 0;
 const getMaxHeight = () => {
     maxHeight = 0;
-    sections.forEach((section) => {
+    sections2.forEach((section) => {
         maxHeight += section.offsetHeight;
     });
 };
 getMaxHeight();
 gsap.to("#progress", {
     immediateRender: false,
-    value: 100,
+    value: 85,
     ease: "none",
     scrollTrigger: {
         trigger: "#section05",
-        start: "top top",
-        end: () => `+=${maxWidth * 3}`,
+        start: "bottom bottom",
+        end: "180% 100%",
+        scrub: true,
+        invalidateOnRefresh: true,
+        // markers: true,
+    },
+});
+gsap.to("#progress", {
+    immediateRender: false,
+    value: 100,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#section06",
+        start: "200% bottom",
+        end: "280% 130%",
         scrub: true,
         invalidateOnRefresh: true,
         // markers: true,
@@ -562,8 +595,66 @@ gsap.to(sects, {
 });
 // 가로모드
 
-
-
+gsap.to(".card_01", {
+    yPercent: "random(-90 90)",
+    rotate: "random(-10 10)",
+    scrollTrigger: {
+        trigger: "#section04",
+        scrub: 1,
+        start: "20% 0%",
+        // markers: true,
+    },
+});
+gsap.to(".card_02", {
+    yPercent: "random(-90 90)",
+    rotate: "random(-10 10)",
+    scrollTrigger: {
+        trigger: "#section04",
+        scrub: 1,
+        start: "30% 0%",
+        // markers: true,
+    },
+});
+gsap.to(".card_03", {
+    yPercent: "random(-90 90)",
+    rotate: "random(-10 10)",
+    scrollTrigger: {
+        trigger: "#section04",
+        scrub: 1,
+        start: "45% 0%",
+        // markers: true,
+    },
+});
+gsap.to(".card_04", {
+    yPercent: "random(-90 90)",
+    rotate: "random(-10 10)",
+    scrollTrigger: {
+        trigger: "#section04",
+        scrub: 1,
+        start: "55% 0%",
+        // markers: true,
+    },
+});
+gsap.to(".card_05", {
+    yPercent: "random(90)",
+    rotate: "random(-5 5)",
+    scrollTrigger: {
+        trigger: "#section04",
+        scrub: 1,
+        start: "65% 0%",
+        // markers: true,
+    },
+});
+gsap.to(".card_06", {
+    yPercent: "random(90)",
+    rotate: "random(-5 5)",
+    scrollTrigger: {
+        trigger: "#section04",
+        scrub: 1,
+        start: "80% 0%",
+        // markers: true,
+    },
+});
 // section04
 
 const cursor = document.querySelector(".cursor");

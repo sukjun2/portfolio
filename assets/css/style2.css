@@ -31,6 +31,11 @@ body {
 .header__menu ul li a {
     color: #fff;
     padding: 0.2vw 0.5vw;
+    transition: all 0.3s;
+}
+.header__menu ul li.active a {
+    color: #9c193e;
+    font-size: 1.2vw;
 }
 #progress {
     position: fixed;
@@ -114,7 +119,7 @@ progress::-moz-progress-bar {
 @media (max-width: 768px) {
     #section01 {
         height: 100%;
-        margin-top: 50vw;
+        margin-top: 30vw;
         padding: 15vw 0;
     }
 }
@@ -469,6 +474,51 @@ progress::-moz-progress-bar {
     right: 35%;
     bottom: -7%;
 }
+@media (max-width: 1440px) {
+    .aboutMe p {
+    }
+}
+@media (max-width: 1280px) {
+    .aboutMe p {
+    }
+}
+@media (max-width: 1024px) {
+    .aboutMe p {
+    }
+}
+@media (max-width: 768px) {
+    .aboutMe p {
+    }
+}
+@media (max-width: 480px) {
+    .aboutMe p {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .passion p {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .try p {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
 /* /section02__inner */
 /* /section02 */
 
@@ -765,6 +815,73 @@ progress::-moz-progress-bar {
 .php .php__inner a:nth-child(2) {
     margin-top: 1vw;
 }
+@media (max-width: 1440px) {
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+    .site__title p {
+        width: 25%;
+        margin: 0 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    .webstandard .webstandard__inner p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .responsive .responsive__inner p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .react .react__inner p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .vue .vue__inner p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .php .php__inner p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .php .php__inner p span{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+    }
+    .php .php__inner a{
+        margin-top: 0;
+    }
+    .php .php__inner a:nth-child(2) {
+        margin-top: 0vw;
+    }
+}
 /* /section03 */
 
 #sectio04 {
@@ -798,6 +915,140 @@ progress::-moz-progress-bar {
     width: 21vw;
     height: 21vw;
 }
+.card_01 a {
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    background-color: #9c193e;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1vw;
+    line-height: 5vw;
+    text-align: center;
+    position: absolute;
+    left: -10%;
+    bottom: -21%;
+    transition: all 0.3s;
+}
+.card_01 a:hover {
+    background-color: #ece3ce;
+    color: #9c193e;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.card_02 a {
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    background-color: #9c193e;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1vw;
+    line-height: 5vw;
+    text-align: center;
+    position: absolute;
+    left: 24%;
+    bottom: 25%;
+    transition: all 0.3s;
+}
+.card_02 a:hover {
+    background-color: #ece3ce;
+    color: #9c193e;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.card_03 a {
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    background-color: #9c193e;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1vw;
+    line-height: 5vw;
+    text-align: center;
+    position: absolute;
+    left: 15%;
+    bottom: 15%;
+    transition: all 0.3s;
+}
+.card_03 a:hover {
+    background-color: #ece3ce;
+    color: #9c193e;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.card_04 a {
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    background-color: #9c193e;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1vw;
+    line-height: 5vw;
+    text-align: center;
+    position: absolute;
+    left: 15%;
+    bottom: 13%;
+    transition: all 0.3s;
+}
+.card_04 a:hover {
+    background-color: #ece3ce;
+    color: #9c193e;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.card_05 a {
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    background-color: #9c193e;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1vw;
+    line-height: 5vw;
+    text-align: center;
+    position: absolute;
+    left: 23%;
+    bottom: 20%;
+    transition: all 0.3s;
+}
+.card_05 a:hover {
+    background-color: #ece3ce;
+    color: #9c193e;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.card_06 a {
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    background-color: #9c193e;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1vw;
+    line-height: 5vw;
+    text-align: center;
+    position: absolute;
+    left: 14%;
+    bottom: 14%;
+    transition: all 0.3s;
+}
+.card_06 a:hover {
+    background-color: #ece3ce;
+    color: #9c193e;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.card_01,
+.card_02,
+.card_03,
+.card_04,
+.card_05,
+.card_06 {
+    height: 100vh;
+}
 .quiz {
     position: absolute;
     left: 15%;
@@ -809,7 +1060,7 @@ progress::-moz-progress-bar {
     width: 52vw;
     height: 52vw;
     left: 30%;
-    top: 53%;
+    top: -50%;
     transform: translate(-50%, -50%);
 }
 .slider {
@@ -817,7 +1068,7 @@ progress::-moz-progress-bar {
     width: 37vw;
     height: 37vw;
     left: 45%;
-    top: 53%;
+    top: -150%;
     transform: translate(-50%, -50%);
 }
 .mouse {
@@ -825,7 +1076,7 @@ progress::-moz-progress-bar {
     width: 38vw;
     height: 38vw;
     left: 60%;
-    top: 52%;
+    top: -250%;
     transform: translate(-50%, -50%);
 }
 .parallax {
@@ -833,7 +1084,7 @@ progress::-moz-progress-bar {
     width: 43vw;
     height: 43vw;
     left: 75%;
-    top: 53%;
+    top: -350%;
     transform: translate(-50%, -50%);
 }
 .game {
@@ -841,11 +1092,9 @@ progress::-moz-progress-bar {
     width: 37vw;
     height: 37vw;
     left: 90%;
-    top: 53%;
+    top: -450%;
     transform: translate(-50%, -50%);
 }
-/* /sect2 */
-
 .animated_text {
     font-size: 10vw;
     font-weight: 100;
@@ -856,6 +1105,7 @@ progress::-moz-progress-bar {
     padding: 0;
     animation: scroll 120s linear infinite;
     position: absolute;
+    left: 0.5vw;
     color: #fff;
     text-transform: uppercase;
     top: 40%;
@@ -865,6 +1115,83 @@ progress::-moz-progress-bar {
         text-indent: -60em;
     }
 }
+@media (max-width: 1440px) {
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+    .animated_text {
+        font-size: 30vw;
+    }
+    .card {
+        width: 50vw;
+        height: 50vw;
+    }
+    .card_01 a {
+        width: 11vw;
+        height: 11vw;
+        line-height: 11vw;
+    }
+    .search {
+        top: -48%;
+        width: 125vw;
+        height: 125vw;
+    }
+    .card_02 a {
+        width: 11vw;
+        height: 11vw;
+        line-height: 11vw;
+    }
+    .slider {
+        width: 90vw;
+        height: 90vw;
+    }
+    .card_03 a {
+        left: 16%;
+        bottom: 16%;
+        width: 11vw;
+        height: 11vw;
+        line-height: 11vw;
+    }
+    .mouse {
+        width: 90vw;
+        height: 90vw;
+    }
+    .card_04 a {
+        left: 16%;
+        bottom: 14%;
+        width: 11vw;
+        height: 11vw;
+        line-height: 11vw;
+    }
+    .parallax {
+        width: 100vw;
+        height: 100vw;
+    }
+    .card_05 a {
+        left: 23%;
+        bottom: 21%;
+        width: 11vw;
+        height: 11vw;
+        line-height: 11vw;
+    }
+    .game {
+        width: 82vw;
+        height: 82vw;
+    }
+    .card_06 a {
+        left: 23%;
+        bottom: 21%;
+        width: 11vw;
+        height: 11vw;
+        line-height: 11vw;
+    }
+}
+/* /sect2 */
 /* /section04 */
 
 #section05 {
@@ -936,8 +1263,15 @@ progress::-moz-progress-bar {
         text-indent: -60em;
     }
 }
+/* /section05 */
+
+#section06 {
+    margin-top: -1px;
+    background-color: #ece3ce;
+    height: 80%;
+    text-align: center;
+}
 .contact_me {
-    height: 80vh;
     padding: 15.6vw;
     position: relative;
     overflow: hidden;
@@ -1095,4 +1429,4 @@ progress::-moz-progress-bar {
     font-weight: 100;
     font-size: 1.9vw;
 }
-/* /section05 */
+/* /section06 */
