@@ -1221,8 +1221,8 @@ progress::-moz-progress-bar {
 }
 .cursor {
     position: absolute;
-    width: 20vw;
-    height: 20vw;
+    width: 25vw;
+    height: 25vw;
     right: 5%;
     background-size: cover;
     background-position: center center;

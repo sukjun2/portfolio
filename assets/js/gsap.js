@@ -637,7 +637,7 @@ gsap.to(".card_04", {
 });
 gsap.to(".card_05", {
     yPercent: "random(90)",
-    rotate: "random(-5 5)",
+    rotate: "random(-3 3)",
     scrollTrigger: {
         trigger: "#section04",
         scrub: 1,
@@ -647,7 +647,7 @@ gsap.to(".card_05", {
 });
 gsap.to(".card_06", {
     yPercent: "random(90)",
-    rotate: "random(-5 5)",
+    rotate: "random(-3 3)",
     scrollTrigger: {
         trigger: "#section04",
         scrub: 1,
@@ -661,7 +661,7 @@ const cursor = document.querySelector(".cursor");
 const overlay = document.querySelectorAll(".site_overlay");
 
 function moveCircle(e) {
-    gsap.to(cursor, 0.5, {
+    gsap.to(cursor, 0.3, {
         css: {
             left: e.pageX,
             top: e.pageY,
@@ -704,7 +704,8 @@ document.querySelector(".p-11").addEventListener("mouseover", function () {
     document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/netlify.png?raw=true)";
 });
 
-let flag = false;
+let flag = false
+
 overlay.forEach((item) => {
     item.addEventListener("mousemove", function () {
         flag = true;
