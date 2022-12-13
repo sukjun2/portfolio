@@ -689,19 +689,19 @@ document.querySelector(".p-6").addEventListener("mouseover", function () {
     document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/tistory.png?raw=true)";
 });
 document.querySelector(".p-7").addEventListener("mouseover", function () {
-    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/tistory.png?raw=true)";
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/programmers.png?raw=true)";
 });
 document.querySelector(".p-8").addEventListener("mouseover", function () {
-    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/tistory.png?raw=true)";
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/jquery.png?raw=true)";
 });
 document.querySelector(".p-9").addEventListener("mouseover", function () {
-    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/tistory.png?raw=true)";
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/mysql.png?raw=true)";
 });
 document.querySelector(".p-10").addEventListener("mouseover", function () {
-    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/tistory.png?raw=true)";
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/firebase.png?raw=true)";
 });
 document.querySelector(".p-11").addEventListener("mouseover", function () {
-    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/tistory.png?raw=true)";
+    document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/netlify.png?raw=true)";
 });
 
 let flag = false;
