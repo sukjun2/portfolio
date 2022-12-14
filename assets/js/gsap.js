@@ -602,7 +602,7 @@ gsap.from(".php__inner img", {
 const sects = gsap.utils.toArray(".sect");
 
 ScrollTrigger.matchMedia({
-    "(min-width: 768px)": function () {
+    "(min-width: 480px)": function () {
         gsap.to(sects, {
             xPercent: -100 * (sects.length - 1),
             ease: "none",
