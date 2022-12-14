@@ -12,6 +12,25 @@ function raf(time) {
 requestAnimationFrame(raf);
 // lenis 효과
 
+const loader = document.querySelector(".loading");
+const html = document.querySelector("html");
+
+html.style.overflow = "hidden"; //로딩 중 스크롤 방지
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        //로딩속도 구현
+
+        loader.style.opacity = "0";
+        html.style.overflow = "auto"; //스크롤 방지 해제
+
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 400);
+    }, 5000);
+});
+// 로딩
+
 window.addEventListener("scroll", () => {
     let scrollTop = window.scrollY;
     document.querySelectorAll("section").forEach((el, i) => {
@@ -129,7 +148,7 @@ gsap.to("#progress", {
 // 메뉴바 프로그래스
 
 window.onload = function () {
-    const tl = new TimelineLite({ delay: 2 });
+    const tl = new TimelineLite({ delay: 7 });
     tl.to(".header__menu", {
         delay: -1,
         xPercent: 100,
@@ -161,7 +180,7 @@ document.querySelectorAll(".split").forEach((text) => {
 gsap.from(".title span", {
     yPercent: -300,
     scale: 0,
-    delay: 3.3,
+    delay: 8.3,
     opacity: 0,
     duration: 2,
     stagger: 0.1,
@@ -178,7 +197,7 @@ gsap.to(".title span", {
 // section01
 
 gsap.from(".rocket", {
-    delay: 5,
+    delay: 10,
     opacity: 0,
 });
 gsap.from(".rocket", {
@@ -192,7 +211,7 @@ gsap.from(".rocket", {
     },
 });
 gsap.from(".about__me", {
-    delay: 5.5,
+    delay: 10.5,
     opacity: 0,
 });
 gsap.from(".profile01", {
@@ -323,7 +342,7 @@ ScrollTrigger.create({
 });
 gsap.from(".bubble__effect01", {
     opacity: 0,
-    delay: 4,
+    delay: 9,
 });
 gsap.to(
     [
