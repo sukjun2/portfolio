@@ -1290,56 +1290,94 @@ progress::-moz-progress-bar {
         height: 110vh;
     }
     .quiz {
+        width: 30vw;
+        height: 30vw;
         position: absolute;
         left: 35%;
         top: 20%;
         transform: translate(-50%, -50%);
-        scale: 150%;
     }
     .search {
         position: absolute;
-        width: 52vw;
-        height: 52vw;
-        left: 85%;
-        top: -65%;
+        width: 75vw;
+        height: 75vw;
+        left: 75%;
+        top: -66%;
         transform: translate(-50%, -50%);
-        scale: 155%;
     }
     .slider {
         position: absolute;
-        width: 37vw;
-        height: 37vw;
-        left: 40%;
+        width: 55vw;
+        height: 55vw;
+        left: 30%;
         top: -155%;
         transform: translate(-50%, -50%);
-        scale: 155%;
     }
     .mouse {
         position: absolute;
-        width: 38vw;
-        height: 38vw;
-        left: 80%;
+        width: 55vw;
+        height: 55vw;
+        left: 75%;
         top: -245%;
         transform: translate(-50%, -50%);
-        scale: 150%;
     }
     .parallax {
         position: absolute;
-        width: 43vw;
-        height: 43vw;
-        left: 35%;
+        width: 65vw;
+        height: 65vw;
+        left: 27%;
         top: -330%;
         transform: translate(-50%, -50%);
-        scale: 155%;
     }
     .game {
         position: absolute;
-        width: 37vw;
-        height: 37vw;
-        left: 77%;
+        width: 53vw;
+        height: 53vw;
+        left: 72%;
         top: -420%;
-        scale: 150%;
         transform: translate(-50%, -50%);
+    }
+    .card_01 a {
+        left: -15%;
+        bottom: -27%;
+        width: 10vw;
+        height: 10vw;
+        line-height: 10vw;
+    }
+    .card_02 a {
+        left: 22%;
+        bottom: 23%;
+        width: 10vw;
+        height: 10vw;
+        line-height: 10vw;
+    }
+    .card_03 a {
+        left: 14%;
+        bottom: 13%;
+        width: 10vw;
+        height: 10vw;
+        line-height: 10vw;
+    }
+    .card_04 a {
+        left: 13%;
+        bottom: 11%;
+        width: 10vw;
+        height: 10vw;
+        line-height: 10vw;
+    }
+    .card_05 a {
+        left: 21%;
+        bottom: 18%;
+        width: 10vw;
+        height: 10vw;
+        line-height: 10vw;
+    }
+    .card_06 a {
+        left: 11%;
+        bottom: 12%;
+        width: 10vw;
+        height: 10vw;
+        line-height: 10vw;
     }
 }
 @media (max-width: 480px) {
