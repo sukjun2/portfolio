@@ -126,7 +126,7 @@ progress::-moz-progress-bar {
 @media (max-width: 480px) {
     #section01 {
         height: 100%;
-        margin-top: 70vw;
+        margin-top: 20vw;
         margin-bottom: -20vw;
         padding: 15vw 0;
     }
