@@ -1,6 +1,3 @@
-
-
-
 gsap.to(".header__inner", {
     y: 0,
     duration: 2,
@@ -11,7 +8,6 @@ gsap.to("#section01 h1", {
     opacity: 1,
     duration: 2,
 });
-
 
 gsap.to("#section01 h1", {
     yPercent: -200,

@@ -119,7 +119,7 @@ progress::-moz-progress-bar {
 @media (max-width: 768px) {
     #section01 {
         height: 100%;
-        margin-top: 30vw;
+        margin-top: 50vw;
         padding: 15vw 0;
     }
 }
@@ -488,16 +488,12 @@ progress::-moz-progress-bar {
 }
 @media (max-width: 768px) {
     .aboutMe p {
-    }
-}
-@media (max-width: 480px) {
-    .aboutMe p {
         width: 80%;
         margin: 0 auto;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
     }
     .passion p {
@@ -506,7 +502,7 @@ progress::-moz-progress-bar {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
     }
     .try p {
@@ -515,8 +511,19 @@ progress::-moz-progress-bar {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+    }
+}
+@media (max-width: 480px) {
+    .aboutMe p {
+        -webkit-line-clamp: 2;
+    }
+    .passion p {
+        -webkit-line-clamp: 2;
+    }
+    .try p {
+        -webkit-line-clamp: 2;
     }
 }
 /* /section02__inner */
@@ -649,6 +656,7 @@ progress::-moz-progress-bar {
 }
 .responsive .responsive__inner {
     display: flex;
+    flex-flow: row-reverse;
     justify-content: space-between;
     position: relative;
 }
@@ -723,9 +731,6 @@ progress::-moz-progress-bar {
 .react .react__inner a:nth-child(2) {
     margin-top: 1vw;
 }
-.react .react__inner a:nth-child(3) {
-    margin-top: 1vw;
-}
 /* /react */
 
 .site__inner .vue .vue_title {
@@ -741,6 +746,7 @@ progress::-moz-progress-bar {
 }
 .vue .vue__inner {
     display: flex;
+    flex-flow: row-reverse;
     justify-content: space-between;
     position: relative;
 }
@@ -820,67 +826,196 @@ progress::-moz-progress-bar {
 @media (max-width: 1280px) {
 }
 @media (max-width: 1024px) {
-}
-@media (max-width: 768px) {
-}
-@media (max-width: 480px) {
-    .site__title p {
-        width: 25%;
+    .site__inner .webstandard .webstandard_title {
+        text-align: center;
+    }
+    .webstandard .webstandard__inner {
+        display: block;
+        text-align: center;
+    }
+    .webstandard .webstandard__inner img {
+        width: 100%;
+        margin-bottom: 2.6vw;
+    }
+    .webstandard .webstandard__inner p {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        font-size: 1.5vw;
+    }
+    .webstandard .webstandard__inner p br {
+        display: none;
+    }
+    .webstandard .webstandard__inner p br.block {
+        display: block;
+    }
+    .webstandard .webstandard__inner a {
+        float: none;
         margin: 0 auto;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
+        margin-top: 2.6vw;
     }
-    .webstandard .webstandard__inner p{
+
+    .site__inner .responsive .responsive_title {
+        text-align: center;
+    }
+    .responsive .responsive__inner {
+        display: block;
+        text-align: center;
+    }
+    .responsive .responsive__inner img {
+        width: 100%;
+        margin-bottom: 2.6vw;
+    }
+    .responsive .responsive__inner p {
+        width: 100%;
+        text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+        font-size: 1.5vw;
     }
-    .responsive .responsive__inner p{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
+    .responsive .responsive__inner p br {
+        display: none;
+    }
+    .responsive .responsive__inner p br.block {
+        display: block;
+    }
+    .responsive .responsive__inner a {
+        float: none;
+        margin: 0 auto;
+        margin-top: 2.6vw;
+    }
+
+    .site__inner .react .react_title {
+        text-align: center;
+    }
+    .react .react__inner {
+        display: block;
+        text-align: center;
+    }
+    .react .react__inner img {
+        width: 100%;
+        margin-bottom: 2.6vw;
     }
     .react .react__inner p {
+        width: 100%;
+        text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+        font-size: 1.5vw;
+    }
+    .react .react__inner p br {
+        display: none;
+    }
+    .react .react__inner p br.block {
+        display: block;
+    }
+    .react .react__inner span {
+        margin-top: 2.6vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .react .react__inner a {
+        float: none;
+        margin-top: 0;
+    }
+    .react .react__inner a:nth-child(2) {
+        margin-top: 0vw;
+    }
+
+    .site__inner .vue .vue_title {
+        text-align: center;
+    }
+    .vue .vue__inner {
+        display: block;
+        text-align: center;
+    }
+    .vue .vue__inner img {
+        width: 100%;
+        margin-bottom: 2.6vw;
     }
     .vue .vue__inner p {
+        width: 100%;
+        text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+        font-size: 1.5vw;
+    }
+    .vue .vue__inner p br {
+        display: none;
+    }
+    .vue .vue__inner p br.block {
+        display: block;
+    }
+    .vue .vue__inner a {
+        float: none;
+        margin: 0 auto;
+        margin-top: 2.6vw;
+    }
+
+    .site__inner .php .php_title {
+        text-align: center;
+    }
+    .php .php__inner {
+        display: block;
+        text-align: center;
+    }
+    .php .php__inner img {
+        width: 100%;
+        margin-bottom: 2.6vw;
     }
     .php .php__inner p {
+        width: 100%;
+        text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
+        font-size: 1.5vw;
     }
-    .php .php__inner p span{
+    .php .php__inner p br {
+        display: none;
+    }
+    .php .php__inner p br.block {
+        display: block;
+    }
+    .php .php__inner span {
+        margin-top: 2.6vw;
         display: flex;
-        width: 100%;
-        justify-content: space-between;
-        position: absolute;
-        bottom: 0;
+        justify-content: space-evenly;
+        align-items: center;
     }
-    .php .php__inner a{
+    .php .php__inner a {
+        float: none;
         margin-top: 0;
     }
     .php .php__inner a:nth-child(2) {
         margin-top: 0vw;
     }
+}
+@media (max-width: 768px) {
+    .site__title h2 {
+        padding-top: 21vw;
+    }
+    .site__title p {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
 }
 /* /section03 */
 
@@ -1050,6 +1185,10 @@ progress::-moz-progress-bar {
 .card_06 {
     height: 100vh;
 }
+.card {
+    width: 22vw;
+    height: 22vw;
+}
 .quiz {
     position: absolute;
     left: 15%;
@@ -1123,74 +1262,79 @@ progress::-moz-progress-bar {
 @media (max-width: 1024px) {
 }
 @media (max-width: 768px) {
-}
-@media (max-width: 480px) {
+    .horizontalSection {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .sect2 {
+        z-index: 1;
+        margin-top: -5px;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/response_sect2.png);
+        background-size: contain;
+        background-color: #9c193e;
+    }
     .animated_text {
-        font-size: 30vw;
+        display: none;
     }
-    .card {
-        width: 50vw;
-        height: 50vw;
+    .card_01,
+    .card_02,
+    .card_03,
+    .card_04,
+    .card_05,
+    .card_06 {
+        height: 0vh;
     }
-    .card_01 a {
-        width: 11vw;
-        height: 11vw;
-        line-height: 11vw;
+    .quiz {
+        position: absolute;
+        left: 45%;
+        top: 30%;
+        transform: translate(-50%, -50%);
     }
     .search {
-        top: -48%;
-        width: 125vw;
-        height: 125vw;
-    }
-    .card_02 a {
-        width: 11vw;
-        height: 11vw;
-        line-height: 11vw;
+        position: absolute;
+        width: 52vw;
+        height: 52vw;
+        left: 65%;
+        top: -40%;
+        transform: translate(-50%, -50%);
     }
     .slider {
-        width: 90vw;
-        height: 90vw;
-    }
-    .card_03 a {
-        left: 16%;
-        bottom: 16%;
-        width: 11vw;
-        height: 11vw;
-        line-height: 11vw;
+        position: absolute;
+        width: 37vw;
+        height: 37vw;
+        left: 45%;
+        top: -110%;
+        transform: translate(-50%, -50%);
     }
     .mouse {
-        width: 90vw;
-        height: 90vw;
-    }
-    .card_04 a {
-        left: 16%;
-        bottom: 14%;
-        width: 11vw;
-        height: 11vw;
-        line-height: 11vw;
+        position: absolute;
+        width: 38vw;
+        height: 38vw;
+        left: 65%;
+        top: -180%;
+        transform: translate(-50%, -50%);
     }
     .parallax {
-        width: 100vw;
-        height: 100vw;
-    }
-    .card_05 a {
-        left: 23%;
-        bottom: 21%;
-        width: 11vw;
-        height: 11vw;
-        line-height: 11vw;
+        position: absolute;
+        width: 43vw;
+        height: 43vw;
+        left: 45%;
+        top: -250%;
+        transform: translate(-50%, -50%);
     }
     .game {
-        width: 82vw;
-        height: 82vw;
+        position: absolute;
+        width: 37vw;
+        height: 37vw;
+        left: 65%;
+        top: -320%;
+        transform: translate(-50%, -50%);
     }
-    .card_06 a {
-        left: 14%;
-        bottom: 14%;
-        width: 11vw;
-        height: 11vw;
-        line-height: 11vw;
-    }
+}
+@media (max-width: 480px) {
 }
 /* /sect2 */
 /* /section04 */

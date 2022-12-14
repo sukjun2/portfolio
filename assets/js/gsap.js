@@ -582,15 +582,19 @@ gsap.from(".php__inner img", {
 
 const sects = gsap.utils.toArray(".sect");
 
-gsap.to(sects, {
-    xPercent: -100 * (sects.length - 1),
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".horizontalWrap",
-        pin: true,
-        scrub: 1,
-        end: "+=2000",
-        // markers: true,
+ScrollTrigger.matchMedia({
+    "(min-width: 768px)": function () {
+        gsap.to(sects, {
+            xPercent: -100 * (sects.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".horizontalWrap",
+                pin: true,
+                scrub: 1,
+                end: "+=2000",
+                // markers: true,
+            },
+        });
     },
 });
 // 가로모드
@@ -704,7 +708,7 @@ document.querySelector(".p-11").addEventListener("mouseover", function () {
     document.querySelector(".cursor").style.backgroundImage = "url(https://github.com/sukjun2/portfolio/blob/main/assets/img/netlify.png?raw=true)";
 });
 
-let flag = false
+let flag = false;
 
 overlay.forEach((item) => {
     item.addEventListener("mousemove", function () {
