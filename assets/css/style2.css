@@ -516,14 +516,61 @@ progress::-moz-progress-bar {
     }
 }
 @media (max-width: 480px) {
+    .aboutMe {
+        overflow: scroll;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0);
+    }
+    .aboutMe h2 {
+        display: none;
+    }
     .aboutMe p {
-        -webkit-line-clamp: 2;
+        padding: 30px 10px;
+        overflow: visible;
+        -webkit-line-clamp: inherit;
+        word-break: keep-all;
+        font-size: 14px;
+    }
+    .aboutMe p br {
+        display: none;
+    }
+
+    .passion {
+        overflow: scroll;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0);
+    }
+    .passion h2 {
+        display: none;
     }
     .passion p {
-        -webkit-line-clamp: 2;
+        padding: 30px 10px;
+        overflow: visible;
+        -webkit-line-clamp: inherit;
+        word-break: keep-all;
+        font-size: 14px;
+    }
+    .passion p br {
+        display: none;
+    }
+
+    .try {
+        overflow: scroll;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0);
+    }
+    .try h2 {
+        display: none;
     }
     .try p {
-        -webkit-line-clamp: 2;
+        padding: 30px 10px;
+        overflow: visible;
+        -webkit-line-clamp: inherit;
+        word-break: keep-all;
+        font-size: 14px;
+    }
+    .try p br {
+        display: none;
     }
 }
 /* /section02__inner */
@@ -1016,6 +1063,21 @@ progress::-moz-progress-bar {
     }
 }
 @media (max-width: 480px) {
+    .webstandard .webstandard__inner p {
+        font-size: 14px;
+    }
+    .responsive .responsive__inner p {
+        font-size: 14px;
+    }
+    .react .react__inner p {
+        font-size: 14px;
+    }
+    .vue .vue__inner p {
+        font-size: 14px;
+    }
+    .php .php__inner p {
+        font-size: 14px;
+    }
 }
 /* /section03 */
 
@@ -1262,7 +1324,6 @@ progress::-moz-progress-bar {
 @media (max-width: 1024px) {
 }
 @media (max-width: 768px) {
-    
 }
 @media (max-width: 480px) {
     .horizontalSection {
