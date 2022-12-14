@@ -517,7 +517,7 @@ progress::-moz-progress-bar {
 }
 @media (max-width: 480px) {
     .aboutMe {
-        overflow: scroll;
+        overflow-y: scroll;
         border-radius: 50%;
         background-color: rgba(0, 0, 0);
     }
@@ -536,7 +536,7 @@ progress::-moz-progress-bar {
     }
 
     .passion {
-        overflow: scroll;
+        overflow-y: scroll;
         border-radius: 50%;
         background-color: rgba(0, 0, 0);
     }
@@ -555,7 +555,7 @@ progress::-moz-progress-bar {
     }
 
     .try {
-        overflow: scroll;
+        overflow-y: scroll;
         border-radius: 50%;
         background-color: rgba(0, 0, 0);
     }
@@ -563,7 +563,7 @@ progress::-moz-progress-bar {
         display: none;
     }
     .try p {
-        padding: 20px 10px;
+        padding: 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        0px 10px;
         overflow: visible;
         -webkit-line-clamp: inherit;
         word-break: keep-all;
