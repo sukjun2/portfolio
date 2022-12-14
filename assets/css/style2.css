@@ -1273,7 +1273,8 @@ progress::-moz-progress-bar {
         width: 100%;
         height: 100%;
         background-image: url(../img/response_sect2.png);
-        background-size: contain;
+        background-size: cover;
+        background-position: center center;
         background-color: #9c193e;
     }
     .animated_text {
@@ -1285,52 +1286,59 @@ progress::-moz-progress-bar {
     .card_04,
     .card_05,
     .card_06 {
-        height: 0vh;
+        width: 100%;
+        height: 100vh;
     }
     .quiz {
         position: absolute;
-        left: 45%;
-        top: 30%;
+        left: 35%;
+        top: 20%;
         transform: translate(-50%, -50%);
+        scale: 150%;
     }
     .search {
         position: absolute;
         width: 52vw;
         height: 52vw;
-        left: 65%;
-        top: -40%;
+        left: 85%;
+        top: -65%;
         transform: translate(-50%, -50%);
+        scale: 155%;
     }
     .slider {
         position: absolute;
         width: 37vw;
         height: 37vw;
-        left: 45%;
-        top: -110%;
+        left: 40%;
+        top: -155%;
         transform: translate(-50%, -50%);
+        scale: 155%;
     }
     .mouse {
         position: absolute;
         width: 38vw;
         height: 38vw;
-        left: 65%;
-        top: -180%;
+        left: 80%;
+        top: -245%;
         transform: translate(-50%, -50%);
+        scale: 150%;
     }
     .parallax {
         position: absolute;
         width: 43vw;
         height: 43vw;
-        left: 45%;
-        top: -250%;
+        left: 35%;
+        top: -330%;
         transform: translate(-50%, -50%);
+        scale: 155%;
     }
     .game {
         position: absolute;
         width: 37vw;
         height: 37vw;
-        left: 65%;
-        top: -320%;
+        left: 77%;
+        top: -420%;
+        scale: 150%;
         transform: translate(-50%, -50%);
     }
 }
