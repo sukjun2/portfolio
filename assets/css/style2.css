@@ -1012,22 +1012,22 @@ progress::-moz-progress-bar {
 }
 @media (max-width: 480px) {
     .webstandard .webstandard__inner p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .webstandard .webstandard__inner p br.block2 {
         display: block;
     }
     .responsive .responsive__inner p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .react .react__inner p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .vue .vue__inner p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .php .php__inner p {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 /* /section03 */
