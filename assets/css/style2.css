@@ -497,7 +497,7 @@ progress::-moz-progress-bar {
     }
     .aboutMe p {
         display: none;
-        font-size: 14px;
+        font-size: 12px;
     }
     
     .passion:hover {
@@ -518,7 +518,7 @@ progress::-moz-progress-bar {
     }
     .passion p {
         display: none;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .try:hover {
@@ -539,7 +539,7 @@ progress::-moz-progress-bar {
     }
     .try p {
         display: none;
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 @media (max-width: 768px) {
