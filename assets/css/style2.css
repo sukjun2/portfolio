@@ -489,7 +489,7 @@ progress::-moz-progress-bar {
         padding: 8vw 4vw;
         display: block;
     }
-    .aboutMe:hover br{
+    .aboutMe:hover br {
         display: none;
     }
     .aboutMe h2 {
@@ -499,7 +499,7 @@ progress::-moz-progress-bar {
         display: none;
         font-size: 12px;
     }
-    
+
     .passion:hover {
         overflow-x: hidden;
     }
@@ -510,7 +510,7 @@ progress::-moz-progress-bar {
         padding: 6vw 2vw;
         display: block;
     }
-    .passion:hover br{
+    .passion:hover br {
         display: none;
     }
     .passion h2 {
@@ -531,7 +531,7 @@ progress::-moz-progress-bar {
         padding: 6vw 2vw;
         display: block;
     }
-    .try:hover br{
+    .try:hover br {
         display: none;
     }
     .try h2 {
@@ -1621,6 +1621,9 @@ progress::-moz-progress-bar {
     }
     .my_info p {
         font-size: 14px;
+    }
+    ::placeholder {
+        font-weight: 300;
     }
 }
 /* /section06 */
