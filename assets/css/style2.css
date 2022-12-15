@@ -860,11 +860,6 @@ progress::-moz-progress-bar {
     .webstandard .webstandard__inner p {
         width: 100%;
         text-align: center;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
         font-size: 1.5vw;
     }
     .webstandard .webstandard__inner p br {
@@ -893,11 +888,6 @@ progress::-moz-progress-bar {
     .responsive .responsive__inner p {
         width: 100%;
         text-align: center;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
         font-size: 1.5vw;
     }
     .responsive .responsive__inner p br {
@@ -926,11 +916,6 @@ progress::-moz-progress-bar {
     .react .react__inner p {
         width: 100%;
         text-align: center;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
         font-size: 1.5vw;
     }
     .react .react__inner p br {
@@ -967,11 +952,6 @@ progress::-moz-progress-bar {
     .vue .vue__inner p {
         width: 100%;
         text-align: center;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
         font-size: 1.5vw;
     }
     .vue .vue__inner p br {
@@ -1000,11 +980,6 @@ progress::-moz-progress-bar {
     .php .php__inner p {
         width: 100%;
         text-align: center;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
         font-size: 1.5vw;
     }
     .php .php__inner p br {
@@ -1040,6 +1015,7 @@ progress::-moz-progress-bar {
         font-size: 14px;
     }
     .webstandard .webstandard__inner p br.block2 {
+        display: block;
     }
     .responsive .responsive__inner p {
         font-size: 14px;
