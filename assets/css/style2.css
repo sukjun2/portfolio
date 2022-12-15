@@ -563,7 +563,7 @@ progress::-moz-progress-bar {
         display: none;
     }
     .try p {
-        padding: 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        0px 10px;
+        padding: 20px 10px;
         overflow: visible;
         -webkit-line-clamp: inherit;
         word-break: keep-all;
