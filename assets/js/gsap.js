@@ -71,7 +71,6 @@ function loading() {
     }
 }
 loading();
-
 // 로딩
 
 window.addEventListener("scroll", () => {

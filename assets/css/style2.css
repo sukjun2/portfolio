@@ -1066,6 +1066,8 @@ progress::-moz-progress-bar {
     .webstandard .webstandard__inner p {
         font-size: 14px;
     }
+    .webstandard .webstandard__inner p br.block2 {
+    }
     .responsive .responsive__inner p {
         font-size: 14px;
     }
@@ -1587,9 +1589,6 @@ progress::-moz-progress-bar {
     animation: rotate 30s linear infinite;
 }
 @keyframes rotate {
-    100% {
-        rotate: 360deg;
-    }
 }
 .contact_icon1 {
     width: 10vw;
@@ -1601,11 +1600,6 @@ progress::-moz-progress-bar {
     background-size: cover;
     animation: rotate 30s linear infinite;
 }
-@keyframes rotate {
-    100% {
-        rotate: 360deg;
-    }
-}
 .contact_icon2 {
     width: 20vw;
     height: 20vw;
@@ -1615,11 +1609,6 @@ progress::-moz-progress-bar {
     background-image: url(../img/contact_03.svg);
     background-size: cover;
     animation: rotate 30s linear infinite;
-}
-@keyframes rotate {
-    100% {
-        rotate: 360deg;
-    }
 }
 .contact_icon3 {
     width: 20vw;
@@ -1631,11 +1620,6 @@ progress::-moz-progress-bar {
     background-size: cover;
     animation: rotate 30s linear infinite;
 }
-@keyframes rotate {
-    100% {
-        rotate: 360deg;
-    }
-}
 .contact_icon4 {
     width: 7vw;
     height: 7vw;
@@ -1645,11 +1629,6 @@ progress::-moz-progress-bar {
     background-image: url(../img/contact_05.svg);
     background-size: cover;
     animation: rotate 30s linear infinite;
-}
-@keyframes rotate {
-    100% {
-        rotate: 360deg;
-    }
 }
 .contact_icon5 {
     width: 12vw;
