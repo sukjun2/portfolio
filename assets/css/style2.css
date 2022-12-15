@@ -841,6 +841,9 @@ progress::-moz-progress-bar {
 .php .php__inner a:nth-child(2) {
     margin-top: 1vw;
 }
+.block2 {
+    display: none;
+}
 @media (max-width: 1440px) {
 }
 @media (max-width: 1280px) {
