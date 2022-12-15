@@ -475,103 +475,76 @@ progress::-moz-progress-bar {
     bottom: -7%;
 }
 @media (max-width: 1440px) {
-    .aboutMe p {
-    }
 }
 @media (max-width: 1280px) {
-    .aboutMe p {
-    }
 }
 @media (max-width: 1024px) {
+    .aboutMe:hover {
+        overflow-x: hidden;
+    }
+    .aboutMe:hover h2 {
+        display: none;
+    }
+    .aboutMe:hover p {
+        padding: 8vw 4vw;
+        display: block;
+    }
+    .aboutMe:hover br{
+        display: none;
+    }
+    .aboutMe h2 {
+        margin-top: 13vw;
+    }
     .aboutMe p {
+        display: none;
+        font-size: 14px;
+    }
+    
+    .passion:hover {
+        overflow-x: hidden;
+    }
+    .passion:hover h2 {
+        display: none;
+    }
+    .passion:hover p {
+        padding: 6vw 2vw;
+        display: block;
+    }
+    .passion:hover br{
+        display: none;
+    }
+    .passion h2 {
+        margin-top: 10vw;
+    }
+    .passion p {
+        display: none;
+        font-size: 14px;
+    }
+
+    .try:hover {
+        overflow-x: hidden;
+    }
+    .try:hover h2 {
+        display: none;
+    }
+    .try:hover p {
+        padding: 6vw 2vw;
+        display: block;
+    }
+    .try:hover br{
+        display: none;
+    }
+    .try h2 {
+        margin-top: 10vw;
+    }
+    .try p {
+        display: none;
+        font-size: 14px;
     }
 }
 @media (max-width: 768px) {
-    .aboutMe p {
-        width: 80%;
-        margin: 0 auto;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-    }
-    .passion p {
-        width: 80%;
-        margin: 0 auto;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-    }
-    .try p {
-        width: 80%;
-        margin: 0 auto;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-    }
 }
 @media (max-width: 480px) {
-    .aboutMe {
-        overflow-y: scroll;
-        border-radius: 50%;
-        background-color: rgba(0, 0, 0);
-    }
-    .aboutMe h2 {
-        display: none;
-    }
-    .aboutMe p {
-        padding: 30px 10px;
-        overflow: visible;
-        -webkit-line-clamp: inherit;
-        word-break: keep-all;
-        font-size: 14px;
-    }
-    .aboutMe p br {
-        display: none;
-    }
-
-    .passion {
-        overflow-y: scroll;
-        border-radius: 50%;
-        background-color: rgba(0, 0, 0);
-    }
-    .passion h2 {
-        display: none;
-    }
-    .passion p {
-        padding: 20px 10px;
-        overflow: visible;
-        -webkit-line-clamp: inherit;
-        word-break: keep-all;
-        font-size: 14px;
-    }
-    .passion p br {
-        display: none;
-    }
-
-    .try {
-        overflow-y: scroll;
-        border-radius: 50%;
-        background-color: rgba(0, 0, 0);
-    }
-    .try h2 {
-        display: none;
-    }
-    .try p {
-        padding: 20px 10px;
-        overflow: visible;
-        -webkit-line-clamp: inherit;
-        word-break: keep-all;
-        font-size: 14px;
-    }
-    .try p br {
-        display: none;
-    }
 }
 /* /section02__inner */
 /* /section02 */
@@ -1588,8 +1561,6 @@ progress::-moz-progress-bar {
     background-image: url(../img/contact_01.svg);
     animation: rotate 30s linear infinite;
 }
-@keyframes rotate {
-}
 .contact_icon1 {
     width: 10vw;
     height: 10vw;
@@ -1645,7 +1616,6 @@ progress::-moz-progress-bar {
         rotate: 360deg;
     }
 }
-
 .my_info {
     display: flex;
     justify-content: space-around;

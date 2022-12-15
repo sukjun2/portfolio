@@ -402,6 +402,7 @@ gsap.to(
         ease: "power1.out",
     }
 );
+
 // section02
 
 gsap.to(".sun_rot", {
