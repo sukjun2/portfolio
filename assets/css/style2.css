@@ -1682,4 +1682,20 @@ progress::-moz-progress-bar {
     font-weight: 100;
     font-size: 1.9vw;
 }
+@media (max-width: 1440px) {
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+    .study_site p {
+        font-size: 14px;
+    }
+    .my_info p {
+        font-size: 14px;
+    }
+}
 /* /section06 */
